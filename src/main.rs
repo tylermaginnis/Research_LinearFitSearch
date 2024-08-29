@@ -638,6 +638,90 @@ fn generate_test_data() -> Vec<(Vec<i32>, i32, Option<usize>, String)> {
         test_data.push((difficult_values_15.clone(), target, expected, "Difficult distribution (exponential growth)".to_string()));
     }
 
+    // Set 31: Complex distribution (large range with random gaps and exponential growth)
+    let mut complex_values = vec![0];
+    for _ in 0..100000 {
+        complex_values.push(complex_values.last().unwrap() + rand::thread_rng().gen_range(1..100));
+    }
+    let exponential_growth = (0..1000).map(|x| (2.0_f64.powf(x as f64 / 100.0) as i32)).collect::<Vec<i32>>();
+    complex_values.extend(exponential_growth);
+    complex_values.sort_unstable();
+    for _ in 0..3 {
+        let target = complex_values[rand::thread_rng().gen_range(0..complex_values.len())];
+        let expected = complex_values.binary_search(&target).ok();
+        test_data.push((complex_values.clone(), target, expected, "Complex distribution (large range with random gaps and exponential growth)".to_string()));
+    }
+
+    // Set 32: Complex distribution (large range with random gaps and prime numbers)
+    let mut complex_values_2 = vec![0];
+    for _ in 0..100000 {
+        complex_values_2.push(complex_values_2.last().unwrap() + rand::thread_rng().gen_range(1..100));
+    }
+    let prime_numbers = vec![2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
+    complex_values_2.extend(prime_numbers);
+    complex_values_2.sort_unstable();
+    for _ in 0..3 {
+        let target = complex_values_2[rand::thread_rng().gen_range(0..complex_values_2.len())];
+        let expected = complex_values_2.binary_search(&target).ok();
+        test_data.push((complex_values_2.clone(), target, expected, "Complex distribution (large range with random gaps and prime numbers)".to_string()));
+    }
+
+    // Set 33: Complex distribution (large range with random gaps and Fibonacci sequence)
+    let mut complex_values_3 = vec![0];
+    for _ in 0..100000 {
+        complex_values_3.push(complex_values_3.last().unwrap() + rand::thread_rng().gen_range(1..100));
+    }
+    let fibonacci_sequence = vec![1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765];
+    complex_values_3.extend(fibonacci_sequence);
+    complex_values_3.sort_unstable();
+    for _ in 0..3 {
+        let target = complex_values_3[rand::thread_rng().gen_range(0..complex_values_3.len())];
+        let expected = complex_values_3.binary_search(&target).ok();
+        test_data.push((complex_values_3.clone(), target, expected, "Complex distribution (large range with random gaps and Fibonacci sequence)".to_string()));
+    }
+
+    // Set 34: Complex distribution (large range with random gaps and geometric progression)
+    let mut complex_values_4 = vec![0];
+    for _ in 0..100000 {
+        complex_values_4.push(complex_values_4.last().unwrap() + rand::thread_rng().gen_range(1..100));
+    }
+    let geometric_progression = (0..20).map(|x| 2_i32.pow(x)).collect::<Vec<i32>>();
+    complex_values_4.extend(geometric_progression);
+    complex_values_4.sort_unstable();
+    for _ in 0..3 {
+        let target = complex_values_4[rand::thread_rng().gen_range(0..complex_values_4.len())];
+        let expected = complex_values_4.binary_search(&target).ok();
+        test_data.push((complex_values_4.clone(), target, expected, "Complex distribution (large range with random gaps and geometric progression)".to_string()));
+    }
+
+    // Set 35: Complex distribution (large range with random gaps and random values)
+    let mut complex_values_5 = vec![0];
+    for _ in 0..3 {
+        complex_values_5.push(complex_values_5.last().unwrap() + rand::thread_rng().gen_range(1..100));
+    }
+    let random_values = (0..1000).map(|_| rand::thread_rng().gen_range(10000..100000)).collect::<Vec<i32>>();
+    complex_values_5.extend(random_values);
+    complex_values_5.sort_unstable();
+    for _ in 0..3 {
+        let target = complex_values_5[rand::thread_rng().gen_range(0..complex_values_5.len())];
+        let expected = complex_values_5.binary_search(&target).ok();
+        test_data.push((complex_values_5.clone(), target, expected, "Complex distribution (large range with random gaps and random values)".to_string()));
+    }
+
+    // Set 36: Complex distribution (large range with random gaps and small range of values)
+    let mut complex_values_6 = vec![0];
+    for _ in 0..3 {
+        complex_values_6.push(complex_values_6.last().unwrap() + rand::thread_rng().gen_range(1..100));
+    }
+    let small_range_values = (0..1000).map(|_| rand::thread_rng().gen_range(1..10)).collect::<Vec<i32>>();
+    complex_values_6.extend(small_range_values);
+    complex_values_6.sort_unstable();
+    for _ in 0..3 {
+        let target = complex_values_6[rand::thread_rng().gen_range(0..complex_values_6.len())];
+        let expected = complex_values_6.binary_search(&target).ok();
+        test_data.push((complex_values_6.clone(), target, expected, "Complex distribution (large range with random gaps and small range of values)".to_string()));
+    }
+
     test_data
 }
 

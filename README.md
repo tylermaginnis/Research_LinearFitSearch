@@ -31,7 +31,7 @@ The goal of this project is to evaluate the performance of different search algo
 
 ### Linear Fit Search
 
-Linear Fit Search is an algorithm that attempts to find the target value by leveraging a linear fit equation. It starts by calculating the initial slope (m) and intercept (b) based on the minimum and maximum values in the list. The algorithm then iteratively refines the search range by updating the slope and intercept, and calculating a guess index using the linear fit equation. This process continues until the target value is found or the search range is exhausted. Linear Fit Search is efficient for datasets where the values are approximately linear, but its performance may vary for other types of distributions. For more details, refer to the implementation in [main.rs](src/main.rs).
+Linear Fit Search is an algorithm that attempts to find the target value by leveraging a linear fit equation. It starts by calculating the initial slope (m) and intercept (b) based on the minimum and maximum values in the list. The algorithm then iteratively refines the search range by updating the slope and intercept, and calculating a guess index using the linear fit equation. This process continues until the target value is found or the search range is exhausted. Linear Fit Search is efficient for datasets where the values are approximately linear, but its performance may vary for other types of distributions. For more details, refer to the implementation in.
 
 ### Binary Search
 
@@ -40,8 +40,17 @@ Binary Search is a more efficient search algorithm that works on sorted lists. I
 ### Interpolated Binary Search
 
 Interpolated Binary Search is an enhancement of Binary Search that works well on uniformly distributed data. Instead of always choosing the middle element, it estimates the position of the target value based on the values at the low and high indices. This can reduce the number of iterations needed to find the target value. The algorithm calculates the estimated position using the formula:
-\[ \text{pos} = \text{low} + \left( \frac{(\text{target} - \text{values}[\text{low}]) \times (\text{high} - \text{low})}{\text{values}[\text{high}] - \text{values}[\text{low}]} \right) \]
-If the estimated position is correct, the search is complete. Otherwise, the algorithm continues the search in the appropriate half of the list. For more details, refer to the implementation in [main.rs](src/main.rs).
+<p>
+  pos = low + 
+  <span style="font-size:larger;">&#40;</span>
+  <span style="font-size:larger;">&#40;</span>target - values[low]<span style="font-size:larger;">&#41;</span> 
+  &times; 
+  <span style="font-size:larger;">&#40;</span>high - low<span style="font-size:larger;">&#41;</span> 
+  <span style="font-size:larger;">&#41;</span> 
+  &#247; 
+  <span style="font-size:larger;">&#40;</span>values[high] - values[low]<span style="font-size:larger;">&#41;</span>
+</p>
+If the estimated position is correct, the search is complete. Otherwise, the algorithm continues the search in the appropriate half of the list. For more details, refer to the implementation.
 
 ### Hybrid Search
 
@@ -49,11 +58,11 @@ Hybrid Search is a combination of Linear Fit Search and Binary Search. It uses L
 
 ### Hybrid Interpolated Search
 
-Hybrid Interpolated Search combines the principles of Interpolated Binary Search and Linear Fit Search. It starts with Linear Fit Search and periodically adjusts the threshold based on the variance of the data. If the variance is low, it uses Interpolated Binary Search to estimate the position of the target value. This approach aims to balance the benefits of both algorithms, providing efficient search performance for a wide range of data distributions. For more details, refer to the implementation in [main.rs](src/main.rs).
+Hybrid Interpolated Search combines the principles of Interpolated Binary Search and Linear Fit Search. It starts with Linear Fit Search and periodically adjusts the threshold based on the variance of the data. If the variance is low, it uses Interpolated Binary Search to estimate the position of the target value. This approach aims to balance the benefits of both algorithms, providing efficient search performance for a wide range of data distributions. For more details, refer to the implementation.
 
 ### Hybrid Adaptive Search
 
-Hybrid Adaptive Search is an advanced search algorithm that adapts its strategy based on the characteristics of the data. It starts with a combination of Linear Fit Search and Binary Search, similar to Hybrid Search. However, it periodically adjusts the threshold and search strategy based on the variance and distribution of the data. This adaptive approach allows the algorithm to dynamically switch between different search methods, optimizing performance for various data distributions. For more details, refer to the implementation in [main.rs](src/main.rs).
+Hybrid Adaptive Search is an advanced search algorithm that adapts its strategy based on the characteristics of the data. It starts with a combination of Linear Fit Search and Binary Search, similar to Hybrid Search. However, it periodically adjusts the threshold and search strategy based on the variance and distribution of the data. This adaptive approach allows the algorithm to dynamically switch between different search methods, optimizing performance for various data distributions. For more details, refer to the implementation.
 
 ## Test Data
 
@@ -87,11 +96,11 @@ To run the performance comparison, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/search-algorithm-comparison.git
+   git clone https://github.com/tylermaginnis/Research_LinearFitSearch.git](https://github.com/tylermaginnis/Research_LinearFitSearch.git)
    ```
 2. Navigate to the project directory:
    ```sh
-   cd search-algorithm-comparison
+   cd Research_LinearFitSearch
    ```
 3. Build and run the project:
    ```sh
@@ -116,6 +125,10 @@ Key observations from the results:
    - Excelled in mixed distributions and non-linear ranges, such as mixed linear and factorial distributions.
    - Showed competitive execution times and memory usage, often close to the optimized threshold search.
    - Did not perform as well in scenarios with very large ranges of values, where other algorithms like Interpolated Binary Search were more effective.
+   - Performed well in complex distributions, such as large ranges with random gaps and exponential growth, but was not always the top performer.
+   - In cases with complex distributions like large ranges with random gaps and prime numbers, it showed good performance but was often outperformed by Interpolated Binary Search.
+   - In scenarios with complex distributions involving large ranges with random gaps and Fibonacci sequences, it demonstrated reliable performance but was not the fastest.
+   - Overall, it is a versatile algorithm that handles a variety of distributions effectively, though it may not always be the best choice for the most complex distributions.
 
 3. **Hybrid Linear-Interpolated Binary Search**:
    - Performed well in non-linear and mixed distributions, such as mixed linear and Fibonacci sequences.

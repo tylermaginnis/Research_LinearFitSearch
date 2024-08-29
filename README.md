@@ -108,29 +108,34 @@ The results from `results.txt` provide a detailed comparison of various search a
 Key observations from the results:
 
 1. **Hybrid Linear-Binary Optimized Threshold Search**:
-   - Frequently emerges as the winner in many test cases.
-   - Demonstrates superior performance in terms of execution time, especially for non-linear and difficult distributions.
-   - Consistently shows low memory usage across different data distributions.
+   - Performed best in scenarios with non-linear and difficult distributions, such as geometric progression and exponential growth.
+   - Consistently showed the lowest execution times and memory usage across various data distributions.
+   - Did not perform as well in cases with small ranges or repeated blocks, where other algorithms like Linear Fit Search were more effective.
 
 2. **Hybrid Linear-Adaptive Binary Search**:
-   - Performs well in cases with mixed distributions and non-linear ranges.
-   - Shows competitive execution times and memory usage, often close to the optimized threshold search.
+   - Excelled in mixed distributions and non-linear ranges, such as mixed linear and factorial distributions.
+   - Showed competitive execution times and memory usage, often close to the optimized threshold search.
+   - Did not perform as well in scenarios with very large ranges of values, where other algorithms like Interpolated Binary Search were more effective.
 
 3. **Hybrid Linear-Interpolated Binary Search**:
-   - Exhibits strong performance in test cases with non-linear and mixed distributions.
-   - Execution times are generally competitive, but not as consistently low as the optimized threshold search.
+   - Performed well in non-linear and mixed distributions, such as mixed linear and Fibonacci sequences.
+   - Execution times were generally competitive, but not as consistently low as the optimized threshold search.
+   - Did not perform as well in cases with difficult distributions like random gaps, where other algorithms like Binary Search were more effective.
 
 4. **Linear Fit Search**:
-   - Performs well in specific cases, particularly with small ranges and repeated blocks.
-   - Execution times and memory usage are higher compared to hybrid search algorithms in most cases.
+   - Performed best in specific cases with small ranges and repeated blocks, such as small range of values and repeated blocks.
+   - Execution times and memory usage were higher compared to hybrid search algorithms in most cases.
+   - Did not perform well in scenarios with non-linear and difficult distributions, where hybrid search algorithms were more effective.
 
 5. **Binary Search**:
-   - Shows reliable performance with predictable execution times and memory usage.
-   - Generally outperformed by hybrid search algorithms in terms of execution time.
+   - Showed reliable performance with predictable execution times and memory usage, especially in cases with sorted data and specific mathematical properties.
+   - Generally outperformed by hybrid search algorithms in terms of execution time, particularly in non-linear and difficult distributions.
+   - Did not perform as well in scenarios with mixed distributions and non-linear ranges, where hybrid search algorithms were more effective.
 
 6. **Interpolated Binary Search**:
-   - Demonstrates good performance in cases with sorted data and specific mathematical properties.
-   - Execution times are competitive, but memory usage is similar to other binary search variants.
+   - Demonstrated good performance in cases with sorted data and specific mathematical properties, such as prime numbers and Fibonacci sequences.
+   - Execution times were competitive, but memory usage was similar to other binary search variants.
+   - Did not perform as well in scenarios with random values and difficult distributions, where hybrid search algorithms were more effective.
 
 Overall, the results highlight the effectiveness of hybrid search algorithms, particularly the Hybrid Linear-Binary Optimized Threshold Search, in handling various data distributions efficiently. The detailed metrics for each test case provide valuable insights into the strengths and weaknesses of each algorithm, guiding the selection of the most suitable search method for different scenarios.
 

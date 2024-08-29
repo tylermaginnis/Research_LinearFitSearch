@@ -2,6 +2,10 @@
 
 This project compares the performance of three different search algorithms: Linear Fit Search, Binary Search, and Hybrid Search. The comparison is based on various distributions of data, including random values, prime numbers, Fibonacci sequence, geometric progression, random gaps, and exponential growth.
 
+## Credits
+
+This project was inspired by the [Linear Fit Search](https://blog.demofox.org/2019/03/22/linear-fit-search/) article on the Demofox blog.
+
 ## Table of Contents
 
 - [Introduction](#introduction)

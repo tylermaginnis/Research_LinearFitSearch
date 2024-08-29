@@ -1,0 +1,5234 @@
+First element
+Linear Fit Search iterations: 0
+Test Case #1
+Linear Fit Search:
+value = 1
+expected = Some(0)
+result = (true, 0, 0)
+duration = 9.4µs
+normalized duration per element = 94.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 6
+Test Case #1
+Binary Search:
+value = 1
+expected = Some(0)
+result = Some(0)
+duration = 3.2µs
+normalized duration per element = 32.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #1
+Interpolated Binary Search:
+value = 1
+expected = Some(0)
+result = Some(0)
+duration = 4.5µs
+normalized duration per element = 45.00 ns
+memory usage = 44 bytes
+Test Case #1
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 1
+expected = Some(0)
+result = Some(0)
+duration = 600ns
+normalized duration per element = 6.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #1
+Hybrid Linear-Interpolated Binary Search:
+value = 1
+expected = Some(0)
+result = Some(0)
+duration = 4.5µs
+normalized duration per element = 45.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #1
+Hybrid Linear-Adaptive Binary Search:
+value = 1
+expected = Some(0)
+result = Some(0)
+duration = 3.5µs
+normalized duration per element = 35.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Last element
+Linear Fit Search iterations: 0
+Test Case #2
+Linear Fit Search:
+value = 199
+expected = Some(99)
+result = (true, 99, 0)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 7
+Test Case #2
+Binary Search:
+value = 199
+expected = Some(99)
+result = Some(99)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #2
+Interpolated Binary Search:
+value = 199
+expected = Some(99)
+result = Some(99)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Test Case #2
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 199
+expected = Some(99)
+result = Some(99)
+duration = 300ns
+normalized duration per element = 3.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #2
+Hybrid Linear-Interpolated Binary Search:
+value = 199
+expected = Some(99)
+result = Some(99)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #2
+Hybrid Linear-Adaptive Binary Search:
+value = 199
+expected = Some(99)
+result = Some(99)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Element not in the list
+Linear Fit Search iterations: 0
+Test Case #3
+Linear Fit Search:
+value = 200
+expected = None
+result = (false, 99, 0)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 7
+Test Case #3
+Binary Search:
+value = 200
+expected = None
+result = None
+duration = 3.4µs
+normalized duration per element = 34.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 0
+Test Case #3
+Interpolated Binary Search:
+value = 200
+expected = None
+result = None
+duration = 2.9µs
+normalized duration per element = 29.00 ns
+memory usage = 44 bytes
+Test Case #3
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 200
+expected = None
+result = None
+duration = 400ns
+normalized duration per element = 4.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #3
+Hybrid Linear-Interpolated Binary Search:
+value = 200
+expected = None
+result = None
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #3
+Hybrid Linear-Adaptive Binary Search:
+value = 200
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Random case
+Linear Fit Search iterations: 3
+Test Case #4
+Linear Fit Search:
+value = 141
+expected = Some(129)
+result = (true, 128, 3)
+duration = 5.7µs
+normalized duration per element = 28.50 ns
+memory usage = 52 bytes
+Binary Search iterations: 7
+Test Case #4
+Binary Search:
+value = 141
+expected = Some(129)
+result = Some(128)
+duration = 3.2µs
+normalized duration per element = 16.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 2
+Test Case #4
+Interpolated Binary Search:
+value = 141
+expected = Some(129)
+result = Some(129)
+duration = 3.2µs
+normalized duration per element = 16.00 ns
+memory usage = 44 bytes
+Test Case #4
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 141
+expected = Some(129)
+result = Some(128)
+duration = 500ns
+normalized duration per element = 2.50 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 2
+Test Case #4
+Hybrid Linear-Interpolated Binary Search:
+value = 141
+expected = Some(129)
+result = Some(129)
+duration = 3.1µs
+normalized duration per element = 15.50 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 2
+Test Case #4
+Hybrid Linear-Adaptive Binary Search:
+value = 141
+expected = Some(129)
+result = Some(129)
+duration = 3.2µs
+normalized duration per element = 16.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Random case
+Linear Fit Search iterations: 2
+Test Case #5
+Linear Fit Search:
+value = 80
+expected = Some(69)
+result = (true, 69, 2)
+duration = 3.2µs
+normalized duration per element = 16.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #5
+Binary Search:
+value = 80
+expected = Some(69)
+result = Some(67)
+duration = 3µs
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 2
+Test Case #5
+Interpolated Binary Search:
+value = 80
+expected = Some(69)
+result = Some(69)
+duration = 3µs
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Test Case #5
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 80
+expected = Some(69)
+result = Some(67)
+duration = 300ns
+normalized duration per element = 1.50 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 2
+Test Case #5
+Hybrid Linear-Interpolated Binary Search:
+value = 80
+expected = Some(69)
+result = Some(69)
+duration = 3.1µs
+normalized duration per element = 15.50 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 2
+Test Case #5
+Hybrid Linear-Adaptive Binary Search:
+value = 80
+expected = Some(69)
+result = Some(69)
+duration = 3.1µs
+normalized duration per element = 15.50 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Random case
+Linear Fit Search iterations: 4
+Test Case #6
+Linear Fit Search:
+value = 177
+expected = Some(172)
+result = (true, 174, 4)
+duration = 3.3µs
+normalized duration per element = 16.50 ns
+memory usage = 52 bytes
+Binary Search iterations: 3
+Test Case #6
+Binary Search:
+value = 177
+expected = Some(172)
+result = Some(174)
+duration = 3µs
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 2
+Test Case #6
+Interpolated Binary Search:
+value = 177
+expected = Some(172)
+result = Some(174)
+duration = 3µs
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 3
+Test Case #6
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 177
+expected = Some(172)
+result = Some(174)
+duration = 3.1µs
+normalized duration per element = 15.50 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 2
+Test Case #6
+Hybrid Linear-Interpolated Binary Search:
+value = 177
+expected = Some(172)
+result = Some(174)
+duration = 3.1µs
+normalized duration per element = 15.50 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 2
+Test Case #6
+Hybrid Linear-Adaptive Binary Search:
+value = 177
+expected = Some(172)
+result = Some(174)
+duration = 3.2µs
+normalized duration per element = 16.00 ns
+memory usage = 44 bytes
+WINNER: Binary Search
+Small range of values
+Linear Fit Search iterations: 1
+Test Case #7
+Linear Fit Search:
+value = 9
+expected = Some(8)
+result = (true, 8, 1)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #7
+Binary Search:
+value = 9
+expected = Some(8)
+result = Some(8)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #7
+Interpolated Binary Search:
+value = 9
+expected = Some(8)
+result = Some(8)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Test Case #7
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 9
+expected = Some(8)
+result = Some(8)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #7
+Hybrid Linear-Interpolated Binary Search:
+value = 9
+expected = Some(8)
+result = Some(8)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Test Case #7
+Hybrid Linear-Adaptive Binary Search:
+value = 9
+expected = Some(8)
+result = Some(8)
+duration = 500ns
+normalized duration per element = 25.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Small range of values
+Linear Fit Search iterations: 1
+Test Case #8
+Linear Fit Search:
+value = 13
+expected = Some(12)
+result = (true, 12, 1)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #8
+Binary Search:
+value = 13
+expected = Some(12)
+result = Some(12)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #8
+Interpolated Binary Search:
+value = 13
+expected = Some(12)
+result = Some(12)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Test Case #8
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 13
+expected = Some(12)
+result = Some(12)
+duration = 200ns
+normalized duration per element = 10.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #8
+Hybrid Linear-Interpolated Binary Search:
+value = 13
+expected = Some(12)
+result = Some(12)
+duration = 27.6µs
+normalized duration per element = 1380.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #8
+Hybrid Linear-Adaptive Binary Search:
+value = 13
+expected = Some(12)
+result = Some(12)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Small range of values
+Linear Fit Search iterations: 1
+Test Case #9
+Linear Fit Search:
+value = 14
+expected = Some(13)
+result = (true, 13, 1)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #9
+Binary Search:
+value = 14
+expected = Some(13)
+result = Some(13)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #9
+Interpolated Binary Search:
+value = 14
+expected = Some(13)
+result = Some(13)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Test Case #9
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 14
+expected = Some(13)
+result = Some(13)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #9
+Hybrid Linear-Interpolated Binary Search:
+value = 14
+expected = Some(13)
+result = Some(13)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #9
+Hybrid Linear-Adaptive Binary Search:
+value = 14
+expected = Some(13)
+result = Some(13)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Larger range of values
+Linear Fit Search iterations: 1
+Test Case #10
+Linear Fit Search:
+value = 730
+expected = Some(243)
+result = (true, 243, 1)
+duration = 3.1µs
+normalized duration per element = 9.28 ns
+memory usage = 52 bytes
+Binary Search iterations: 9
+Test Case #10
+Binary Search:
+value = 730
+expected = Some(243)
+result = Some(243)
+duration = 3µs
+normalized duration per element = 8.98 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #10
+Interpolated Binary Search:
+value = 730
+expected = Some(243)
+result = Some(243)
+duration = 3µs
+normalized duration per element = 8.98 ns
+memory usage = 44 bytes
+Test Case #10
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 730
+expected = Some(243)
+result = Some(243)
+duration = 400ns
+normalized duration per element = 1.20 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #10
+Hybrid Linear-Interpolated Binary Search:
+value = 730
+expected = Some(243)
+result = Some(243)
+duration = 3µs
+normalized duration per element = 8.98 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #10
+Hybrid Linear-Adaptive Binary Search:
+value = 730
+expected = Some(243)
+result = Some(243)
+duration = 3.1µs
+normalized duration per element = 9.28 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Larger range of values
+Linear Fit Search iterations: 1
+Test Case #11
+Linear Fit Search:
+value = 703
+expected = Some(234)
+result = (true, 234, 1)
+duration = 3.1µs
+normalized duration per element = 9.28 ns
+memory usage = 52 bytes
+Binary Search iterations: 6
+Test Case #11
+Binary Search:
+value = 703
+expected = Some(234)
+result = Some(234)
+duration = 3µs
+normalized duration per element = 8.98 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #11
+Interpolated Binary Search:
+value = 703
+expected = Some(234)
+result = Some(234)
+duration = 3.1µs
+normalized duration per element = 9.28 ns
+memory usage = 44 bytes
+Test Case #11
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 703
+expected = Some(234)
+result = Some(234)
+duration = 300ns
+normalized duration per element = 0.90 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #11
+Hybrid Linear-Interpolated Binary Search:
+value = 703
+expected = Some(234)
+result = Some(234)
+duration = 3µs
+normalized duration per element = 8.98 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #11
+Hybrid Linear-Adaptive Binary Search:
+value = 703
+expected = Some(234)
+result = Some(234)
+duration = 3µs
+normalized duration per element = 8.98 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Larger range of values
+Linear Fit Search iterations: 1
+Test Case #12
+Linear Fit Search:
+value = 826
+expected = Some(275)
+result = (true, 275, 1)
+duration = 3.1µs
+normalized duration per element = 9.28 ns
+memory usage = 52 bytes
+Binary Search iterations: 9
+Test Case #12
+Binary Search:
+value = 826
+expected = Some(275)
+result = Some(275)
+duration = 3.1µs
+normalized duration per element = 9.28 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #12
+Interpolated Binary Search:
+value = 826
+expected = Some(275)
+result = Some(275)
+duration = 3µs
+normalized duration per element = 8.98 ns
+memory usage = 44 bytes
+Test Case #12
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 826
+expected = Some(275)
+result = Some(275)
+duration = 300ns
+normalized duration per element = 0.90 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #12
+Hybrid Linear-Interpolated Binary Search:
+value = 826
+expected = Some(275)
+result = Some(275)
+duration = 3µs
+normalized duration per element = 8.98 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #12
+Hybrid Linear-Adaptive Binary Search:
+value = 826
+expected = Some(275)
+result = Some(275)
+duration = 3µs
+normalized duration per element = 8.98 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Even larger range of values
+Linear Fit Search iterations: 1
+Test Case #13
+Linear Fit Search:
+value = 6936
+expected = Some(1387)
+result = (true, 1387, 1)
+duration = 3µs
+normalized duration per element = 1.50 ns
+memory usage = 52 bytes
+Binary Search iterations: 10
+Test Case #13
+Binary Search:
+value = 6936
+expected = Some(1387)
+result = Some(1387)
+duration = 3.2µs
+normalized duration per element = 1.60 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #13
+Interpolated Binary Search:
+value = 6936
+expected = Some(1387)
+result = Some(1387)
+duration = 3µs
+normalized duration per element = 1.50 ns
+memory usage = 44 bytes
+Test Case #13
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 6936
+expected = Some(1387)
+result = Some(1387)
+duration = 500ns
+normalized duration per element = 0.25 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #13
+Hybrid Linear-Interpolated Binary Search:
+value = 6936
+expected = Some(1387)
+result = Some(1387)
+duration = 3.1µs
+normalized duration per element = 1.55 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #13
+Hybrid Linear-Adaptive Binary Search:
+value = 6936
+expected = Some(1387)
+result = Some(1387)
+duration = 3.2µs
+normalized duration per element = 1.60 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Even larger range of values
+Linear Fit Search iterations: 1
+Test Case #14
+Linear Fit Search:
+value = 571
+expected = Some(114)
+result = (true, 114, 1)
+duration = 3.3µs
+normalized duration per element = 1.65 ns
+memory usage = 52 bytes
+Binary Search iterations: 10
+Test Case #14
+Binary Search:
+value = 571
+expected = Some(114)
+result = Some(114)
+duration = 4.1µs
+normalized duration per element = 2.05 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #14
+Interpolated Binary Search:
+value = 571
+expected = Some(114)
+result = Some(114)
+duration = 3.4µs
+normalized duration per element = 1.70 ns
+memory usage = 44 bytes
+Test Case #14
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 571
+expected = Some(114)
+result = Some(114)
+duration = 1.5µs
+normalized duration per element = 0.75 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #14
+Hybrid Linear-Interpolated Binary Search:
+value = 571
+expected = Some(114)
+result = Some(114)
+duration = 4.2µs
+normalized duration per element = 2.10 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 5
+Test Case #14
+Hybrid Linear-Adaptive Binary Search:
+value = 571
+expected = Some(114)
+result = Some(114)
+duration = 3.4µs
+normalized duration per element = 1.70 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Even larger range of values
+Linear Fit Search iterations: 1
+Test Case #15
+Linear Fit Search:
+value = 1151
+expected = Some(230)
+result = (true, 230, 1)
+duration = 3.5µs
+normalized duration per element = 1.75 ns
+memory usage = 52 bytes
+Binary Search iterations: 11
+Test Case #15
+Binary Search:
+value = 1151
+expected = Some(230)
+result = Some(230)
+duration = 3.1µs
+normalized duration per element = 1.55 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #15
+Interpolated Binary Search:
+value = 1151
+expected = Some(230)
+result = Some(230)
+duration = 3µs
+normalized duration per element = 1.50 ns
+memory usage = 44 bytes
+Test Case #15
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 1151
+expected = Some(230)
+result = Some(230)
+duration = 1.3µs
+normalized duration per element = 0.65 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #15
+Hybrid Linear-Interpolated Binary Search:
+value = 1151
+expected = Some(230)
+result = Some(230)
+duration = 3µs
+normalized duration per element = 1.50 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 4
+Test Case #15
+Hybrid Linear-Adaptive Binary Search:
+value = 1151
+expected = Some(230)
+result = Some(230)
+duration = 3.4µs
+normalized duration per element = 1.70 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Very large range of values
+Linear Fit Search iterations: 1
+Test Case #16
+Linear Fit Search:
+value = 4530
+expected = Some(647)
+result = (true, 647, 1)
+duration = 5.4µs
+normalized duration per element = 0.38 ns
+memory usage = 52 bytes
+Binary Search iterations: 11
+Test Case #16
+Binary Search:
+value = 4530
+expected = Some(647)
+result = Some(647)
+duration = 3.2µs
+normalized duration per element = 0.22 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #16
+Interpolated Binary Search:
+value = 4530
+expected = Some(647)
+result = Some(647)
+duration = 2.9µs
+normalized duration per element = 0.20 ns
+memory usage = 44 bytes
+Test Case #16
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 4530
+expected = Some(647)
+result = Some(647)
+duration = 5.8µs
+normalized duration per element = 0.41 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #16
+Hybrid Linear-Interpolated Binary Search:
+value = 4530
+expected = Some(647)
+result = Some(647)
+duration = 3.1µs
+normalized duration per element = 0.22 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 5
+Test Case #16
+Hybrid Linear-Adaptive Binary Search:
+value = 4530
+expected = Some(647)
+result = Some(647)
+duration = 3.3µs
+normalized duration per element = 0.23 ns
+memory usage = 44 bytes
+WINNER: Interpolated Binary Search
+Very large range of values
+Linear Fit Search iterations: 1
+Test Case #17
+Linear Fit Search:
+value = 89517
+expected = Some(12788)
+result = (true, 12788, 1)
+duration = 3.5µs
+normalized duration per element = 0.24 ns
+memory usage = 52 bytes
+Binary Search iterations: 12
+Test Case #17
+Binary Search:
+value = 89517
+expected = Some(12788)
+result = Some(12788)
+duration = 3.1µs
+normalized duration per element = 0.22 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #17
+Interpolated Binary Search:
+value = 89517
+expected = Some(12788)
+result = Some(12788)
+duration = 3µs
+normalized duration per element = 0.21 ns
+memory usage = 44 bytes
+Test Case #17
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 89517
+expected = Some(12788)
+result = Some(12788)
+duration = 2.8µs
+normalized duration per element = 0.20 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #17
+Hybrid Linear-Interpolated Binary Search:
+value = 89517
+expected = Some(12788)
+result = Some(12788)
+duration = 3µs
+normalized duration per element = 0.21 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #17
+Hybrid Linear-Adaptive Binary Search:
+value = 89517
+expected = Some(12788)
+result = Some(12788)
+duration = 3.1µs
+normalized duration per element = 0.22 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Very large range of values
+Linear Fit Search iterations: 1
+Test Case #18
+Linear Fit Search:
+value = 82251
+expected = Some(11750)
+result = (true, 11750, 1)
+duration = 3µs
+normalized duration per element = 0.21 ns
+memory usage = 52 bytes
+Binary Search iterations: 14
+Test Case #18
+Binary Search:
+value = 82251
+expected = Some(11750)
+result = Some(11750)
+duration = 3.1µs
+normalized duration per element = 0.22 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #18
+Interpolated Binary Search:
+value = 82251
+expected = Some(11750)
+result = Some(11750)
+duration = 3µs
+normalized duration per element = 0.21 ns
+memory usage = 44 bytes
+Test Case #18
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 82251
+expected = Some(11750)
+result = Some(11750)
+duration = 1.4µs
+normalized duration per element = 0.10 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #18
+Hybrid Linear-Interpolated Binary Search:
+value = 82251
+expected = Some(11750)
+result = Some(11750)
+duration = 3µs
+normalized duration per element = 0.21 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #18
+Hybrid Linear-Adaptive Binary Search:
+value = 82251
+expected = Some(11750)
+result = Some(11750)
+duration = 3.1µs
+normalized duration per element = 0.22 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Extremely large range of values
+Linear Fit Search iterations: 1
+Test Case #19
+Linear Fit Search:
+value = 693210
+expected = Some(63019)
+result = (true, 63019, 1)
+duration = 3.2µs
+normalized duration per element = 0.04 ns
+memory usage = 52 bytes
+Binary Search iterations: 17
+Test Case #19
+Binary Search:
+value = 693210
+expected = Some(63019)
+result = Some(63019)
+duration = 3.8µs
+normalized duration per element = 0.04 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #19
+Interpolated Binary Search:
+value = 693210
+expected = Some(63019)
+result = Some(63019)
+duration = 3.1µs
+normalized duration per element = 0.03 ns
+memory usage = 44 bytes
+Test Case #19
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 693210
+expected = Some(63019)
+result = Some(63019)
+duration = 4.7µs
+normalized duration per element = 0.05 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #19
+Hybrid Linear-Interpolated Binary Search:
+value = 693210
+expected = Some(63019)
+result = Some(63019)
+duration = 3.1µs
+normalized duration per element = 0.03 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #19
+Hybrid Linear-Adaptive Binary Search:
+value = 693210
+expected = Some(63019)
+result = Some(63019)
+duration = 3.1µs
+normalized duration per element = 0.03 ns
+memory usage = 44 bytes
+WINNER: Interpolated Binary Search
+Extremely large range of values
+Linear Fit Search iterations: 1
+Test Case #20
+Linear Fit Search:
+value = 520576
+expected = Some(47325)
+result = (true, 47325, 1)
+duration = 3.2µs
+normalized duration per element = 0.04 ns
+memory usage = 52 bytes
+Binary Search iterations: 15
+Test Case #20
+Binary Search:
+value = 520576
+expected = Some(47325)
+result = Some(47325)
+duration = 3.4µs
+normalized duration per element = 0.04 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #20
+Interpolated Binary Search:
+value = 520576
+expected = Some(47325)
+result = Some(47325)
+duration = 3µs
+normalized duration per element = 0.03 ns
+memory usage = 44 bytes
+Test Case #20
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 520576
+expected = Some(47325)
+result = Some(47325)
+duration = 16µs
+normalized duration per element = 0.18 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #20
+Hybrid Linear-Interpolated Binary Search:
+value = 520576
+expected = Some(47325)
+result = Some(47325)
+duration = 3.1µs
+normalized duration per element = 0.03 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #20
+Hybrid Linear-Adaptive Binary Search:
+value = 520576
+expected = Some(47325)
+result = Some(47325)
+duration = 3.1µs
+normalized duration per element = 0.03 ns
+memory usage = 44 bytes
+WINNER: Interpolated Binary Search
+Extremely large range of values
+Linear Fit Search iterations: 1
+Test Case #21
+Linear Fit Search:
+value = 638573
+expected = Some(58052)
+result = (true, 58052, 1)
+duration = 3.1µs
+normalized duration per element = 0.03 ns
+memory usage = 52 bytes
+Binary Search iterations: 16
+Test Case #21
+Binary Search:
+value = 638573
+expected = Some(58052)
+result = Some(58052)
+duration = 3.3µs
+normalized duration per element = 0.04 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #21
+Interpolated Binary Search:
+value = 638573
+expected = Some(58052)
+result = Some(58052)
+duration = 2.9µs
+normalized duration per element = 0.03 ns
+memory usage = 44 bytes
+Test Case #21
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 638573
+expected = Some(58052)
+result = Some(58052)
+duration = 10.6µs
+normalized duration per element = 0.12 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #21
+Hybrid Linear-Interpolated Binary Search:
+value = 638573
+expected = Some(58052)
+result = Some(58052)
+duration = 3µs
+normalized duration per element = 0.03 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #21
+Hybrid Linear-Adaptive Binary Search:
+value = 638573
+expected = Some(58052)
+result = Some(58052)
+duration = 3.1µs
+normalized duration per element = 0.03 ns
+memory usage = 44 bytes
+WINNER: Interpolated Binary Search
+Non-linear range of values (squares)
+Linear Fit Search iterations: 8
+Test Case #22
+Linear Fit Search:
+value = 529
+expected = Some(22)
+result = (true, 22, 8)
+duration = 3.6µs
+normalized duration per element = 36.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 6
+Test Case #22
+Binary Search:
+value = 529
+expected = Some(22)
+result = Some(22)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 8
+Test Case #22
+Interpolated Binary Search:
+value = 529
+expected = Some(22)
+result = Some(22)
+duration = 3.8µs
+normalized duration per element = 38.00 ns
+memory usage = 44 bytes
+Test Case #22
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 529
+expected = Some(22)
+result = Some(22)
+duration = 300ns
+normalized duration per element = 3.00 ns
+memory usage = 44 bytes
+Test Case #22
+Hybrid Linear-Interpolated Binary Search:
+value = 529
+expected = Some(22)
+result = Some(22)
+duration = 2.8µs
+normalized duration per element = 28.00 ns
+memory usage = 44 bytes
+Test Case #22
+Hybrid Linear-Adaptive Binary Search:
+value = 529
+expected = Some(22)
+result = Some(22)
+duration = 400ns
+normalized duration per element = 4.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Non-linear range of values (squares)
+Linear Fit Search iterations: 9
+Test Case #23
+Linear Fit Search:
+value = 324
+expected = Some(17)
+result = (true, 17, 9)
+duration = 3.6µs
+normalized duration per element = 36.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #23
+Binary Search:
+value = 324
+expected = Some(17)
+result = Some(17)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 9
+Test Case #23
+Interpolated Binary Search:
+value = 324
+expected = Some(17)
+result = Some(17)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 4
+Test Case #23
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 324
+expected = Some(17)
+result = Some(17)
+duration = 3.2µs
+normalized duration per element = 32.00 ns
+memory usage = 44 bytes
+Test Case #23
+Hybrid Linear-Interpolated Binary Search:
+value = 324
+expected = Some(17)
+result = Some(17)
+duration = 2.9µs
+normalized duration per element = 29.00 ns
+memory usage = 44 bytes
+Test Case #23
+Hybrid Linear-Adaptive Binary Search:
+value = 324
+expected = Some(17)
+result = Some(17)
+duration = 500ns
+normalized duration per element = 5.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Adaptive Binary Search
+Non-linear range of values (squares)
+Linear Fit Search iterations: 8
+Test Case #24
+Linear Fit Search:
+value = 676
+expected = Some(25)
+result = (true, 25, 8)
+duration = 3.5µs
+normalized duration per element = 35.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 6
+Test Case #24
+Binary Search:
+value = 676
+expected = Some(25)
+result = Some(25)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 8
+Test Case #24
+Interpolated Binary Search:
+value = 676
+expected = Some(25)
+result = Some(25)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Test Case #24
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 676
+expected = Some(25)
+result = Some(25)
+duration = 300ns
+normalized duration per element = 3.00 ns
+memory usage = 44 bytes
+Test Case #24
+Hybrid Linear-Interpolated Binary Search:
+value = 676
+expected = Some(25)
+result = Some(25)
+duration = 2.6µs
+normalized duration per element = 26.00 ns
+memory usage = 44 bytes
+Test Case #24
+Hybrid Linear-Adaptive Binary Search:
+value = 676
+expected = Some(25)
+result = Some(25)
+duration = 400ns
+normalized duration per element = 4.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Non-linear range of values (cubes)
+Linear Fit Search iterations: 9
+Test Case #25
+Linear Fit Search:
+value = 12167
+expected = Some(22)
+result = (true, 22, 9)
+duration = 4µs
+normalized duration per element = 80.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #25
+Binary Search:
+value = 12167
+expected = Some(22)
+result = Some(22)
+duration = 3µs
+normalized duration per element = 60.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 8
+Test Case #25
+Interpolated Binary Search:
+value = 12167
+expected = Some(22)
+result = Some(22)
+duration = 3.1µs
+normalized duration per element = 62.00 ns
+memory usage = 44 bytes
+Test Case #25
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 12167
+expected = Some(22)
+result = Some(22)
+duration = 300ns
+normalized duration per element = 6.00 ns
+memory usage = 44 bytes
+Test Case #25
+Hybrid Linear-Interpolated Binary Search:
+value = 12167
+expected = Some(22)
+result = Some(22)
+duration = 1.5µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Test Case #25
+Hybrid Linear-Adaptive Binary Search:
+value = 12167
+expected = Some(22)
+result = Some(22)
+duration = 400ns
+normalized duration per element = 8.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Non-linear range of values (cubes)
+Linear Fit Search iterations: 13
+Test Case #26
+Linear Fit Search:
+value = 4096
+expected = Some(15)
+result = (true, 15, 13)
+duration = 3.9µs
+normalized duration per element = 78.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #26
+Binary Search:
+value = 4096
+expected = Some(15)
+result = Some(15)
+duration = 2.9µs
+normalized duration per element = 58.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 11
+Test Case #26
+Interpolated Binary Search:
+value = 4096
+expected = Some(15)
+result = Some(15)
+duration = 3.2µs
+normalized duration per element = 64.00 ns
+memory usage = 44 bytes
+Test Case #26
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 4096
+expected = Some(15)
+result = Some(15)
+duration = 300ns
+normalized duration per element = 6.00 ns
+memory usage = 44 bytes
+Test Case #26
+Hybrid Linear-Interpolated Binary Search:
+value = 4096
+expected = Some(15)
+result = Some(15)
+duration = 1.6µs
+normalized duration per element = 32.00 ns
+memory usage = 44 bytes
+Test Case #26
+Hybrid Linear-Adaptive Binary Search:
+value = 4096
+expected = Some(15)
+result = Some(15)
+duration = 400ns
+normalized duration per element = 8.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Non-linear range of values (cubes)
+Linear Fit Search iterations: 8
+Test Case #27
+Linear Fit Search:
+value = 729
+expected = Some(8)
+result = (true, 8, 8)
+duration = 5.9µs
+normalized duration per element = 118.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #27
+Binary Search:
+value = 729
+expected = Some(8)
+result = Some(8)
+duration = 2.9µs
+normalized duration per element = 58.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 9
+Test Case #27
+Interpolated Binary Search:
+value = 729
+expected = Some(8)
+result = Some(8)
+duration = 3.1µs
+normalized duration per element = 62.00 ns
+memory usage = 44 bytes
+Test Case #27
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 729
+expected = Some(8)
+result = Some(8)
+duration = 200ns
+normalized duration per element = 4.00 ns
+memory usage = 44 bytes
+Test Case #27
+Hybrid Linear-Interpolated Binary Search:
+value = 729
+expected = Some(8)
+result = Some(8)
+duration = 1.7µs
+normalized duration per element = 34.00 ns
+memory usage = 44 bytes
+Test Case #27
+Hybrid Linear-Adaptive Binary Search:
+value = 729
+expected = Some(8)
+result = Some(8)
+duration = 400ns
+normalized duration per element = 8.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Non-linear range of values (powers of 2)
+Linear Fit Search iterations: 2
+Test Case #28
+Linear Fit Search:
+value = 4
+expected = Some(2)
+result = (true, 2, 2)
+duration = 3.2µs
+normalized duration per element = 152.38 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #28
+Binary Search:
+value = 4
+expected = Some(2)
+result = Some(2)
+duration = 4.5µs
+normalized duration per element = 214.29 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 3
+Test Case #28
+Interpolated Binary Search:
+value = 4
+expected = Some(2)
+result = Some(2)
+duration = 3µs
+normalized duration per element = 142.86 ns
+memory usage = 44 bytes
+Test Case #28
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 4
+expected = Some(2)
+result = Some(2)
+duration = 300ns
+normalized duration per element = 14.29 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 3
+Test Case #28
+Hybrid Linear-Interpolated Binary Search:
+value = 4
+expected = Some(2)
+result = Some(2)
+duration = 3.1µs
+normalized duration per element = 147.62 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 3
+Test Case #28
+Hybrid Linear-Adaptive Binary Search:
+value = 4
+expected = Some(2)
+result = Some(2)
+duration = 3.2µs
+normalized duration per element = 152.38 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Non-linear range of values (powers of 2)
+Linear Fit Search iterations: 13
+Test Case #29
+Linear Fit Search:
+value = 8192
+expected = Some(13)
+result = (true, 13, 13)
+duration = 3.6µs
+normalized duration per element = 171.43 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #29
+Binary Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 3µs
+normalized duration per element = 142.86 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 14
+Test Case #29
+Interpolated Binary Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 3.2µs
+normalized duration per element = 152.38 ns
+memory usage = 44 bytes
+Test Case #29
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 200ns
+normalized duration per element = 9.52 ns
+memory usage = 44 bytes
+Test Case #29
+Hybrid Linear-Interpolated Binary Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 1µs
+normalized duration per element = 47.62 ns
+memory usage = 44 bytes
+Test Case #29
+Hybrid Linear-Adaptive Binary Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 200ns
+normalized duration per element = 9.52 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Non-linear range of values (powers of 2)
+Linear Fit Search iterations: 4
+Test Case #30
+Linear Fit Search:
+value = 16
+expected = Some(4)
+result = (true, 4, 4)
+duration = 6.4µs
+normalized duration per element = 304.76 ns
+memory usage = 52 bytes
+Binary Search iterations: 2
+Test Case #30
+Binary Search:
+value = 16
+expected = Some(4)
+result = Some(4)
+duration = 3µs
+normalized duration per element = 142.86 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 5
+Test Case #30
+Interpolated Binary Search:
+value = 16
+expected = Some(4)
+result = Some(4)
+duration = 3µs
+normalized duration per element = 142.86 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 2
+Test Case #30
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 16
+expected = Some(4)
+result = Some(4)
+duration = 3µs
+normalized duration per element = 142.86 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 5
+Test Case #30
+Hybrid Linear-Interpolated Binary Search:
+value = 16
+expected = Some(4)
+result = Some(4)
+duration = 3.2µs
+normalized duration per element = 152.38 ns
+memory usage = 44 bytes
+Test Case #30
+Hybrid Linear-Adaptive Binary Search:
+value = 16
+expected = Some(4)
+result = Some(4)
+duration = 300ns
+normalized duration per element = 14.29 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Adaptive Binary Search
+Non-linear range of values (factorials)
+Linear Fit Search iterations: 3
+Test Case #31
+Linear Fit Search:
+value = 24
+expected = Some(3)
+result = (true, 3, 3)
+duration = 3.3µs
+normalized duration per element = 330.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #31
+Binary Search:
+value = 24
+expected = Some(3)
+result = Some(3)
+duration = 3µs
+normalized duration per element = 300.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 4
+Test Case #31
+Interpolated Binary Search:
+value = 24
+expected = Some(3)
+result = Some(3)
+duration = 3µs
+normalized duration per element = 300.00 ns
+memory usage = 44 bytes
+Test Case #31
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 24
+expected = Some(3)
+result = Some(3)
+duration = 200ns
+normalized duration per element = 20.00 ns
+memory usage = 44 bytes
+Test Case #31
+Hybrid Linear-Interpolated Binary Search:
+value = 24
+expected = Some(3)
+result = Some(3)
+duration = 100ns
+normalized duration per element = 10.00 ns
+memory usage = 44 bytes
+Test Case #31
+Hybrid Linear-Adaptive Binary Search:
+value = 24
+expected = Some(3)
+result = Some(3)
+duration = 200ns
+normalized duration per element = 20.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Interpolated Binary Search
+Non-linear range of values (factorials)
+Linear Fit Search iterations: 1
+Test Case #32
+Linear Fit Search:
+value = 2
+expected = Some(1)
+result = (true, 1, 1)
+duration = 3.1µs
+normalized duration per element = 310.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 2
+Test Case #32
+Binary Search:
+value = 2
+expected = Some(1)
+result = Some(1)
+duration = 3µs
+normalized duration per element = 300.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 2
+Test Case #32
+Interpolated Binary Search:
+value = 2
+expected = Some(1)
+result = Some(1)
+duration = 3µs
+normalized duration per element = 300.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 2
+Test Case #32
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 2
+expected = Some(1)
+result = Some(1)
+duration = 3µs
+normalized duration per element = 300.00 ns
+memory usage = 44 bytes
+Test Case #32
+Hybrid Linear-Interpolated Binary Search:
+value = 2
+expected = Some(1)
+result = Some(1)
+duration = 200ns
+normalized duration per element = 20.00 ns
+memory usage = 44 bytes
+Test Case #32
+Hybrid Linear-Adaptive Binary Search:
+value = 2
+expected = Some(1)
+result = Some(1)
+duration = 200ns
+normalized duration per element = 20.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Interpolated Binary Search
+Non-linear range of values (factorials)
+Linear Fit Search iterations: 6
+Test Case #33
+Linear Fit Search:
+value = 5040
+expected = Some(6)
+result = (true, 6, 6)
+duration = 3.3µs
+normalized duration per element = 330.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #33
+Binary Search:
+value = 5040
+expected = Some(6)
+result = Some(6)
+duration = 3µs
+normalized duration per element = 300.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 7
+Test Case #33
+Interpolated Binary Search:
+value = 5040
+expected = Some(6)
+result = Some(6)
+duration = 3.1µs
+normalized duration per element = 310.00 ns
+memory usage = 44 bytes
+Test Case #33
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 5040
+expected = Some(6)
+result = Some(6)
+duration = 300ns
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Test Case #33
+Hybrid Linear-Interpolated Binary Search:
+value = 5040
+expected = Some(6)
+result = Some(6)
+duration = 200ns
+normalized duration per element = 20.00 ns
+memory usage = 44 bytes
+Test Case #33
+Hybrid Linear-Adaptive Binary Search:
+value = 5040
+expected = Some(6)
+result = Some(6)
+duration = 200ns
+normalized duration per element = 20.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Interpolated Binary Search
+Non-linear range of values (Fibonacci sequence)
+Linear Fit Search iterations: 11
+Test Case #34
+Linear Fit Search:
+value = 89
+expected = Some(11)
+result = (true, 11, 11)
+duration = 3.6µs
+normalized duration per element = 180.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 3
+Test Case #34
+Binary Search:
+value = 89
+expected = Some(11)
+result = Some(11)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 12
+Test Case #34
+Interpolated Binary Search:
+value = 89
+expected = Some(11)
+result = Some(11)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 3
+Test Case #34
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 89
+expected = Some(11)
+result = Some(11)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Test Case #34
+Hybrid Linear-Interpolated Binary Search:
+value = 89
+expected = Some(11)
+result = Some(11)
+duration = 1.1µs
+normalized duration per element = 55.00 ns
+memory usage = 44 bytes
+Test Case #34
+Hybrid Linear-Adaptive Binary Search:
+value = 89
+expected = Some(11)
+result = Some(11)
+duration = 400ns
+normalized duration per element = 20.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Adaptive Binary Search
+Non-linear range of values (Fibonacci sequence)
+Linear Fit Search iterations: 9
+Test Case #35
+Linear Fit Search:
+value = 34
+expected = Some(9)
+result = (true, 9, 9)
+duration = 3.5µs
+normalized duration per element = 175.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 1
+Test Case #35
+Binary Search:
+value = 34
+expected = Some(9)
+result = Some(9)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 10
+Test Case #35
+Interpolated Binary Search:
+value = 34
+expected = Some(9)
+result = Some(9)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 1
+Test Case #35
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 34
+expected = Some(9)
+result = Some(9)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Test Case #35
+Hybrid Linear-Interpolated Binary Search:
+value = 34
+expected = Some(9)
+result = Some(9)
+duration = 900ns
+normalized duration per element = 45.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #35
+Hybrid Linear-Adaptive Binary Search:
+value = 34
+expected = Some(9)
+result = Some(9)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Interpolated Binary Search
+Non-linear range of values (Fibonacci sequence)
+Linear Fit Search iterations: 7
+Test Case #36
+Linear Fit Search:
+value = 987
+expected = Some(16)
+result = (true, 16, 7)
+duration = 3.4µs
+normalized duration per element = 170.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #36
+Binary Search:
+value = 987
+expected = Some(16)
+result = Some(16)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 7
+Test Case #36
+Interpolated Binary Search:
+value = 987
+expected = Some(16)
+result = Some(16)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Test Case #36
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 987
+expected = Some(16)
+result = Some(16)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Test Case #36
+Hybrid Linear-Interpolated Binary Search:
+value = 987
+expected = Some(16)
+result = Some(16)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Test Case #36
+Hybrid Linear-Adaptive Binary Search:
+value = 987
+expected = Some(16)
+result = Some(16)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Mixed distribution (linear and squares)
+Linear Fit Search iterations: 8
+Test Case #37
+Linear Fit Search:
+value = 324
+expected = None
+result = (false, 46, 8)
+duration = 3.6µs
+normalized duration per element = 36.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 6
+Test Case #37
+Binary Search:
+value = 324
+expected = None
+result = None
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 6
+Test Case #37
+Interpolated Binary Search:
+value = 324
+expected = None
+result = Some(35)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Test Case #37
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 324
+expected = None
+result = None
+duration = 300ns
+normalized duration per element = 3.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 6
+Test Case #37
+Hybrid Linear-Interpolated Binary Search:
+value = 324
+expected = None
+result = Some(35)
+duration = 3.2µs
+normalized duration per element = 32.00 ns
+memory usage = 44 bytes
+Test Case #37
+Hybrid Linear-Adaptive Binary Search:
+value = 324
+expected = None
+result = None
+duration = 500ns
+normalized duration per element = 5.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Mixed distribution (linear and squares)
+Linear Fit Search iterations: 7
+Test Case #38
+Linear Fit Search:
+value = 13
+expected = None
+result = (false, 6, 7)
+duration = 3.5µs
+normalized duration per element = 35.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 2
+Test Case #38
+Binary Search:
+value = 13
+expected = None
+result = Some(24)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 7
+Test Case #38
+Interpolated Binary Search:
+value = 13
+expected = None
+result = None
+duration = 3.2µs
+normalized duration per element = 32.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 2
+Test Case #38
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 13
+expected = None
+result = Some(24)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Test Case #38
+Hybrid Linear-Interpolated Binary Search:
+value = 13
+expected = None
+result = Some(24)
+duration = 3.2µs
+normalized duration per element = 32.00 ns
+memory usage = 44 bytes
+Test Case #38
+Hybrid Linear-Adaptive Binary Search:
+value = 13
+expected = None
+result = Some(24)
+duration = 3.4µs
+normalized duration per element = 34.00 ns
+memory usage = 44 bytes
+WINNER: Binary Search
+Mixed distribution (linear and squares)
+Linear Fit Search iterations: 9
+Test Case #39
+Linear Fit Search:
+value = 23
+expected = None
+result = (false, 8, 9)
+duration = 3.6µs
+normalized duration per element = 36.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 6
+Test Case #39
+Binary Search:
+value = 23
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 9
+Test Case #39
+Interpolated Binary Search:
+value = 23
+expected = None
+result = None
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Test Case #39
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 23
+expected = None
+result = Some(44)
+duration = 200ns
+normalized duration per element = 2.00 ns
+memory usage = 44 bytes
+Test Case #39
+Hybrid Linear-Interpolated Binary Search:
+value = 23
+expected = None
+result = Some(44)
+duration = 3.4µs
+normalized duration per element = 34.00 ns
+memory usage = 44 bytes
+Test Case #39
+Hybrid Linear-Adaptive Binary Search:
+value = 23
+expected = None
+result = Some(44)
+duration = 3.5µs
+normalized duration per element = 35.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Mixed distribution (linear and cubes)
+Linear Fit Search iterations: 3
+Test Case #40
+Linear Fit Search:
+value = 4
+expected = None
+result = (false, 2, 3)
+duration = 3.3µs
+normalized duration per element = 55.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 3
+Test Case #40
+Binary Search:
+value = 4
+expected = None
+result = Some(6)
+duration = 2.9µs
+normalized duration per element = 48.33 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 3
+Test Case #40
+Interpolated Binary Search:
+value = 4
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 50.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 3
+Test Case #40
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 4
+expected = None
+result = Some(6)
+duration = 3µs
+normalized duration per element = 50.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 4
+Test Case #40
+Hybrid Linear-Interpolated Binary Search:
+value = 4
+expected = None
+result = None
+duration = 4.3µs
+normalized duration per element = 71.67 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 4
+Test Case #40
+Hybrid Linear-Adaptive Binary Search:
+value = 4
+expected = None
+result = None
+duration = 3.2µs
+normalized duration per element = 53.33 ns
+memory usage = 44 bytes
+WINNER: Binary Search
+Mixed distribution (linear and cubes)
+Linear Fit Search iterations: 5
+Test Case #41
+Linear Fit Search:
+value = 27
+expected = None
+result = (true, 5, 5)
+duration = 3.3µs
+normalized duration per element = 55.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #41
+Binary Search:
+value = 27
+expected = None
+result = None
+duration = 2.9µs
+normalized duration per element = 48.33 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 6
+Test Case #41
+Interpolated Binary Search:
+value = 27
+expected = None
+result = Some(5)
+duration = 3.1µs
+normalized duration per element = 51.67 ns
+memory usage = 44 bytes
+Test Case #41
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 27
+expected = None
+result = None
+duration = 300ns
+normalized duration per element = 5.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 6
+Test Case #41
+Hybrid Linear-Interpolated Binary Search:
+value = 27
+expected = None
+result = Some(5)
+duration = 3.2µs
+normalized duration per element = 53.33 ns
+memory usage = 44 bytes
+Test Case #41
+Hybrid Linear-Adaptive Binary Search:
+value = 27
+expected = None
+result = None
+duration = 600ns
+normalized duration per element = 10.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Mixed distribution (linear and cubes)
+Linear Fit Search iterations: 5
+Test Case #42
+Linear Fit Search:
+value = 11
+expected = None
+result = (false, 4, 5)
+duration = 3.3µs
+normalized duration per element = 55.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #42
+Binary Search:
+value = 11
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 50.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 5
+Test Case #42
+Interpolated Binary Search:
+value = 11
+expected = None
+result = None
+duration = 3.1µs
+normalized duration per element = 51.67 ns
+memory usage = 44 bytes
+Test Case #42
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 11
+expected = None
+result = Some(20)
+duration = 300ns
+normalized duration per element = 5.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 6
+Test Case #42
+Hybrid Linear-Interpolated Binary Search:
+value = 11
+expected = None
+result = None
+duration = 3.2µs
+normalized duration per element = 53.33 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 6
+Test Case #42
+Hybrid Linear-Adaptive Binary Search:
+value = 11
+expected = None
+result = None
+duration = 3.3µs
+normalized duration per element = 55.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Mixed distribution (linear and powers of 2)
+Linear Fit Search iterations: 13
+Test Case #43
+Linear Fit Search:
+value = 128
+expected = None
+result = (true, 13, 13)
+duration = 3.7µs
+normalized duration per element = 92.50 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #43
+Binary Search:
+value = 128
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 75.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 14
+Test Case #43
+Interpolated Binary Search:
+value = 128
+expected = None
+result = Some(13)
+duration = 3.3µs
+normalized duration per element = 82.50 ns
+memory usage = 44 bytes
+Test Case #43
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 128
+expected = None
+result = None
+duration = 300ns
+normalized duration per element = 7.50 ns
+memory usage = 44 bytes
+Test Case #43
+Hybrid Linear-Interpolated Binary Search:
+value = 128
+expected = None
+result = Some(13)
+duration = 1.5µs
+normalized duration per element = 37.50 ns
+memory usage = 44 bytes
+Test Case #43
+Hybrid Linear-Adaptive Binary Search:
+value = 128
+expected = None
+result = Some(13)
+duration = 400ns
+normalized duration per element = 10.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Mixed distribution (linear and powers of 2)
+Linear Fit Search iterations: 21
+Test Case #44
+Linear Fit Search:
+value = 2048
+expected = None
+result = (true, 21, 21)
+duration = 4.2µs
+normalized duration per element = 105.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #44
+Binary Search:
+value = 2048
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 75.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 22
+Test Case #44
+Interpolated Binary Search:
+value = 2048
+expected = None
+result = Some(21)
+duration = 3.4µs
+normalized duration per element = 85.00 ns
+memory usage = 44 bytes
+Test Case #44
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 2048
+expected = None
+result = None
+duration = 300ns
+normalized duration per element = 7.50 ns
+memory usage = 44 bytes
+Test Case #44
+Hybrid Linear-Interpolated Binary Search:
+value = 2048
+expected = None
+result = Some(21)
+duration = 1.6µs
+normalized duration per element = 40.00 ns
+memory usage = 44 bytes
+Test Case #44
+Hybrid Linear-Adaptive Binary Search:
+value = 2048
+expected = None
+result = Some(21)
+duration = 400ns
+normalized duration per element = 10.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Mixed distribution (linear and powers of 2)
+Linear Fit Search iterations: 9
+Test Case #45
+Linear Fit Search:
+value = 32
+expected = None
+result = (true, 9, 9)
+duration = 3.5µs
+normalized duration per element = 87.50 ns
+memory usage = 52 bytes
+Binary Search iterations: 2
+Test Case #45
+Binary Search:
+value = 32
+expected = None
+result = Some(9)
+duration = 2.9µs
+normalized duration per element = 72.50 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 10
+Test Case #45
+Interpolated Binary Search:
+value = 32
+expected = None
+result = Some(9)
+duration = 3.1µs
+normalized duration per element = 77.50 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 2
+Test Case #45
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 32
+expected = None
+result = Some(9)
+duration = 3µs
+normalized duration per element = 75.00 ns
+memory usage = 44 bytes
+Test Case #45
+Hybrid Linear-Interpolated Binary Search:
+value = 32
+expected = None
+result = Some(9)
+duration = 1.4µs
+normalized duration per element = 35.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 2
+Test Case #45
+Hybrid Linear-Adaptive Binary Search:
+value = 32
+expected = None
+result = Some(9)
+duration = 3.1µs
+normalized duration per element = 77.50 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Interpolated Binary Search
+Mixed distribution (linear and factorials)
+Linear Fit Search iterations: 7
+Test Case #46
+Linear Fit Search:
+value = 24
+expected = None
+result = (true, 7, 7)
+duration = 3.5µs
+normalized duration per element = 175.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #46
+Binary Search:
+value = 24
+expected = None
+result = Some(7)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 8
+Test Case #46
+Interpolated Binary Search:
+value = 24
+expected = None
+result = Some(7)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Test Case #46
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 24
+expected = None
+result = Some(7)
+duration = 200ns
+normalized duration per element = 10.00 ns
+memory usage = 44 bytes
+Test Case #46
+Hybrid Linear-Interpolated Binary Search:
+value = 24
+expected = None
+result = Some(7)
+duration = 900ns
+normalized duration per element = 45.00 ns
+memory usage = 44 bytes
+Test Case #46
+Hybrid Linear-Adaptive Binary Search:
+value = 24
+expected = None
+result = Some(7)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Mixed distribution (linear and factorials)
+Linear Fit Search iterations: 15
+Test Case #47
+Linear Fit Search:
+value = 362880
+expected = None
+result = (true, 17, 15)
+duration = 3.9µs
+normalized duration per element = 195.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 3
+Test Case #47
+Binary Search:
+value = 362880
+expected = None
+result = Some(17)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 13
+Test Case #47
+Interpolated Binary Search:
+value = 362880
+expected = None
+result = Some(17)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 3
+Test Case #47
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 362880
+expected = None
+result = Some(17)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Test Case #47
+Hybrid Linear-Interpolated Binary Search:
+value = 362880
+expected = None
+result = Some(17)
+duration = 500ns
+normalized duration per element = 25.00 ns
+memory usage = 44 bytes
+Test Case #47
+Hybrid Linear-Adaptive Binary Search:
+value = 362880
+expected = None
+result = Some(17)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Adaptive Binary Search
+Mixed distribution (linear and factorials)
+Linear Fit Search iterations: 0
+Test Case #48
+Linear Fit Search:
+value = 3628800
+expected = Some(19)
+result = (true, 19, 0)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #48
+Binary Search:
+value = 3628800
+expected = Some(19)
+result = Some(19)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #48
+Interpolated Binary Search:
+value = 3628800
+expected = Some(19)
+result = Some(19)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Test Case #48
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 3628800
+expected = Some(19)
+result = Some(19)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #48
+Hybrid Linear-Interpolated Binary Search:
+value = 3628800
+expected = Some(19)
+result = Some(19)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #48
+Hybrid Linear-Adaptive Binary Search:
+value = 3628800
+expected = Some(19)
+result = Some(19)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Mixed distribution (linear and Fibonacci sequence)
+Linear Fit Search iterations: 2
+Test Case #49
+Linear Fit Search:
+value = 2
+expected = Some(5)
+result = (true, 2, 2)
+duration = 3.1µs
+normalized duration per element = 77.50 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #49
+Binary Search:
+value = 2
+expected = Some(5)
+result = Some(2)
+duration = 3µs
+normalized duration per element = 75.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 3
+Test Case #49
+Interpolated Binary Search:
+value = 2
+expected = Some(5)
+result = Some(2)
+duration = 3.1µs
+normalized duration per element = 77.50 ns
+memory usage = 44 bytes
+Test Case #49
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 2
+expected = Some(5)
+result = Some(2)
+duration = 300ns
+normalized duration per element = 7.50 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 3
+Test Case #49
+Hybrid Linear-Interpolated Binary Search:
+value = 2
+expected = Some(5)
+result = Some(2)
+duration = 3.2µs
+normalized duration per element = 80.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 3
+Test Case #49
+Hybrid Linear-Adaptive Binary Search:
+value = 2
+expected = Some(5)
+result = Some(2)
+duration = 3.1µs
+normalized duration per element = 77.50 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Mixed distribution (linear and Fibonacci sequence)
+Linear Fit Search iterations: 4
+Test Case #50
+Linear Fit Search:
+value = 3
+expected = Some(7)
+result = (true, 4, 4)
+duration = 3.4µs
+normalized duration per element = 85.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 3
+Test Case #50
+Binary Search:
+value = 3
+expected = Some(7)
+result = Some(4)
+duration = 3µs
+normalized duration per element = 75.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 5
+Test Case #50
+Interpolated Binary Search:
+value = 3
+expected = Some(7)
+result = Some(4)
+duration = 3µs
+normalized duration per element = 75.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 3
+Test Case #50
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 3
+expected = Some(7)
+result = Some(4)
+duration = 3.1µs
+normalized duration per element = 77.50 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 5
+Test Case #50
+Hybrid Linear-Interpolated Binary Search:
+value = 3
+expected = Some(7)
+result = Some(4)
+duration = 3.3µs
+normalized duration per element = 82.50 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 5
+Test Case #50
+Hybrid Linear-Adaptive Binary Search:
+value = 3
+expected = Some(7)
+result = Some(4)
+duration = 3.3µs
+normalized duration per element = 82.50 ns
+memory usage = 44 bytes
+WINNER: Binary Search
+Mixed distribution (linear and Fibonacci sequence)
+Linear Fit Search iterations: 15
+Test Case #51
+Linear Fit Search:
+value = 610
+expected = None
+result = (true, 29, 15)
+duration = 4µs
+normalized duration per element = 100.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 2
+Test Case #51
+Binary Search:
+value = 610
+expected = None
+result = Some(29)
+duration = 2.9µs
+normalized duration per element = 72.50 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 13
+Test Case #51
+Interpolated Binary Search:
+value = 610
+expected = None
+result = Some(29)
+duration = 3.2µs
+normalized duration per element = 80.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 2
+Test Case #51
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 610
+expected = None
+result = Some(29)
+duration = 3µs
+normalized duration per element = 75.00 ns
+memory usage = 44 bytes
+Test Case #51
+Hybrid Linear-Interpolated Binary Search:
+value = 610
+expected = None
+result = Some(29)
+duration = 1.2µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 2
+Test Case #51
+Hybrid Linear-Adaptive Binary Search:
+value = 610
+expected = None
+result = Some(29)
+duration = 3.1µs
+normalized duration per element = 77.50 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Interpolated Binary Search
+Difficult distribution (prime numbers)
+Linear Fit Search iterations: 2
+Test Case #52
+Linear Fit Search:
+value = 89
+expected = Some(23)
+result = (true, 23, 2)
+duration = 3.1µs
+normalized duration per element = 124.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #52
+Binary Search:
+value = 89
+expected = Some(23)
+result = Some(23)
+duration = 2.9µs
+normalized duration per element = 116.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 3
+Test Case #52
+Interpolated Binary Search:
+value = 89
+expected = Some(23)
+result = Some(23)
+duration = 3µs
+normalized duration per element = 120.00 ns
+memory usage = 44 bytes
+Test Case #52
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 89
+expected = Some(23)
+result = Some(23)
+duration = 200ns
+normalized duration per element = 8.00 ns
+memory usage = 44 bytes
+Test Case #52
+Hybrid Linear-Interpolated Binary Search:
+value = 89
+expected = Some(23)
+result = Some(23)
+duration = 300ns
+normalized duration per element = 12.00 ns
+memory usage = 44 bytes
+Test Case #52
+Hybrid Linear-Adaptive Binary Search:
+value = 89
+expected = Some(23)
+result = Some(23)
+duration = 300ns
+normalized duration per element = 12.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (prime numbers)
+Linear Fit Search iterations: 2
+Test Case #53
+Linear Fit Search:
+value = 31
+expected = Some(10)
+result = (true, 10, 2)
+duration = 3.3µs
+normalized duration per element = 132.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #53
+Binary Search:
+value = 31
+expected = Some(10)
+result = Some(10)
+duration = 3µs
+normalized duration per element = 120.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 3
+Test Case #53
+Interpolated Binary Search:
+value = 31
+expected = Some(10)
+result = Some(10)
+duration = 3µs
+normalized duration per element = 120.00 ns
+memory usage = 44 bytes
+Test Case #53
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 31
+expected = Some(10)
+result = Some(10)
+duration = 200ns
+normalized duration per element = 8.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 3
+Test Case #53
+Hybrid Linear-Interpolated Binary Search:
+value = 31
+expected = Some(10)
+result = Some(10)
+duration = 3.2µs
+normalized duration per element = 128.00 ns
+memory usage = 44 bytes
+Test Case #53
+Hybrid Linear-Adaptive Binary Search:
+value = 31
+expected = Some(10)
+result = Some(10)
+duration = 300ns
+normalized duration per element = 12.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (prime numbers)
+Linear Fit Search iterations: 2
+Test Case #54
+Linear Fit Search:
+value = 5
+expected = Some(2)
+result = (true, 2, 2)
+duration = 3.2µs
+normalized duration per element = 128.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 3
+Test Case #54
+Binary Search:
+value = 5
+expected = Some(2)
+result = Some(2)
+duration = 2.9µs
+normalized duration per element = 116.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 3
+Test Case #54
+Interpolated Binary Search:
+value = 5
+expected = Some(2)
+result = Some(2)
+duration = 3µs
+normalized duration per element = 120.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 3
+Test Case #54
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 5
+expected = Some(2)
+result = Some(2)
+duration = 3µs
+normalized duration per element = 120.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 3
+Test Case #54
+Hybrid Linear-Interpolated Binary Search:
+value = 5
+expected = Some(2)
+result = Some(2)
+duration = 3.1µs
+normalized duration per element = 124.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 3
+Test Case #54
+Hybrid Linear-Adaptive Binary Search:
+value = 5
+expected = Some(2)
+result = Some(2)
+duration = 3.2µs
+normalized duration per element = 128.00 ns
+memory usage = 44 bytes
+WINNER: Binary Search
+Difficult distribution (random values)
+Linear Fit Search iterations: 0
+Test Case #55
+Linear Fit Search:
+value = 258
+expected = None
+result = (false, 0, 0)
+duration = 2.9µs
+normalized duration per element = 29.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 7
+Test Case #55
+Binary Search:
+value = 258
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 0
+Test Case #55
+Interpolated Binary Search:
+value = 258
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Test Case #55
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 258
+expected = None
+result = None
+duration = 300ns
+normalized duration per element = 3.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 3
+Test Case #55
+Hybrid Linear-Interpolated Binary Search:
+value = 258
+expected = None
+result = None
+duration = 3.2µs
+normalized duration per element = 32.00 ns
+memory usage = 44 bytes
+Test Case #55
+Hybrid Linear-Adaptive Binary Search:
+value = 258
+expected = None
+result = Some(38)
+duration = 600ns
+normalized duration per element = 6.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (random values)
+Linear Fit Search iterations: 0
+Test Case #56
+Linear Fit Search:
+value = 936
+expected = None
+result = (false, 99, 0)
+duration = 3.7µs
+normalized duration per element = 37.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 7
+Test Case #56
+Binary Search:
+value = 936
+expected = None
+result = Some(95)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 0
+Test Case #56
+Interpolated Binary Search:
+value = 936
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Test Case #56
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 936
+expected = None
+result = Some(95)
+duration = 300ns
+normalized duration per element = 3.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 3
+Test Case #56
+Hybrid Linear-Interpolated Binary Search:
+value = 936
+expected = None
+result = None
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 2
+Test Case #56
+Hybrid Linear-Adaptive Binary Search:
+value = 936
+expected = None
+result = None
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (random values)
+Linear Fit Search iterations: 0
+Test Case #57
+Linear Fit Search:
+value = 79
+expected = None
+result = (false, 0, 0)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 6
+Test Case #57
+Binary Search:
+value = 79
+expected = None
+result = None
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 0
+Test Case #57
+Interpolated Binary Search:
+value = 79
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Test Case #57
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 79
+expected = None
+result = None
+duration = 300ns
+normalized duration per element = 3.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 4
+Test Case #57
+Hybrid Linear-Interpolated Binary Search:
+value = 79
+expected = None
+result = None
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Test Case #57
+Hybrid Linear-Adaptive Binary Search:
+value = 79
+expected = None
+result = None
+duration = 1.1µs
+normalized duration per element = 11.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (geometric progression)
+Linear Fit Search iterations: 11
+Test Case #58
+Linear Fit Search:
+value = 2048
+expected = Some(11)
+result = (true, 11, 11)
+duration = 3.6µs
+normalized duration per element = 180.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 3
+Test Case #58
+Binary Search:
+value = 2048
+expected = Some(11)
+result = Some(11)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 12
+Test Case #58
+Interpolated Binary Search:
+value = 2048
+expected = Some(11)
+result = Some(11)
+duration = 3.3µs
+normalized duration per element = 165.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 3
+Test Case #58
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 2048
+expected = Some(11)
+result = Some(11)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Test Case #58
+Hybrid Linear-Interpolated Binary Search:
+value = 2048
+expected = Some(11)
+result = Some(11)
+duration = 1µs
+normalized duration per element = 50.00 ns
+memory usage = 44 bytes
+Test Case #58
+Hybrid Linear-Adaptive Binary Search:
+value = 2048
+expected = Some(11)
+result = Some(11)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Adaptive Binary Search
+Difficult distribution (geometric progression)
+Linear Fit Search iterations: 6
+Test Case #59
+Linear Fit Search:
+value = 64
+expected = Some(6)
+result = (true, 6, 6)
+duration = 3.3µs
+normalized duration per element = 165.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 3
+Test Case #59
+Binary Search:
+value = 64
+expected = Some(6)
+result = Some(6)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 7
+Test Case #59
+Interpolated Binary Search:
+value = 64
+expected = Some(6)
+result = Some(6)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 3
+Test Case #59
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 64
+expected = Some(6)
+result = Some(6)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 7
+Test Case #59
+Hybrid Linear-Interpolated Binary Search:
+value = 64
+expected = Some(6)
+result = Some(6)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 44 bytes
+Test Case #59
+Hybrid Linear-Adaptive Binary Search:
+value = 64
+expected = Some(6)
+result = Some(6)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Adaptive Binary Search
+Difficult distribution (geometric progression)
+Linear Fit Search iterations: 5
+Test Case #60
+Linear Fit Search:
+value = 32
+expected = Some(5)
+result = (true, 5, 5)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #60
+Binary Search:
+value = 32
+expected = Some(5)
+result = Some(5)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 6
+Test Case #60
+Interpolated Binary Search:
+value = 32
+expected = Some(5)
+result = Some(5)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Test Case #60
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 32
+expected = Some(5)
+result = Some(5)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 6
+Test Case #60
+Hybrid Linear-Interpolated Binary Search:
+value = 32
+expected = Some(5)
+result = Some(5)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Test Case #60
+Hybrid Linear-Adaptive Binary Search:
+value = 32
+expected = Some(5)
+result = Some(5)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (exponential growth)
+Linear Fit Search iterations: 3
+Test Case #61
+Linear Fit Search:
+value = 8
+expected = Some(3)
+result = (true, 3, 3)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #61
+Binary Search:
+value = 8
+expected = Some(3)
+result = Some(3)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 4
+Test Case #61
+Interpolated Binary Search:
+value = 8
+expected = Some(3)
+result = Some(3)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Test Case #61
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 8
+expected = Some(3)
+result = Some(3)
+duration = 200ns
+normalized duration per element = 10.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 4
+Test Case #61
+Hybrid Linear-Interpolated Binary Search:
+value = 8
+expected = Some(3)
+result = Some(3)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Test Case #61
+Hybrid Linear-Adaptive Binary Search:
+value = 8
+expected = Some(3)
+result = Some(3)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (exponential growth)
+Linear Fit Search iterations: 13
+Test Case #62
+Linear Fit Search:
+value = 8192
+expected = Some(13)
+result = (true, 13, 13)
+duration = 3.6µs
+normalized duration per element = 180.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #62
+Binary Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 14
+Test Case #62
+Interpolated Binary Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 3.3µs
+normalized duration per element = 165.00 ns
+memory usage = 44 bytes
+Test Case #62
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Test Case #62
+Hybrid Linear-Interpolated Binary Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 1µs
+normalized duration per element = 50.00 ns
+memory usage = 44 bytes
+Test Case #62
+Hybrid Linear-Adaptive Binary Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (exponential growth)
+Linear Fit Search iterations: 1
+Test Case #63
+Linear Fit Search:
+value = 2
+expected = Some(1)
+result = (true, 1, 1)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 3
+Test Case #63
+Binary Search:
+value = 2
+expected = Some(1)
+result = Some(1)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 2
+Test Case #63
+Interpolated Binary Search:
+value = 2
+expected = Some(1)
+result = Some(1)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 3
+Test Case #63
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 2
+expected = Some(1)
+result = Some(1)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 2
+Test Case #63
+Hybrid Linear-Interpolated Binary Search:
+value = 2
+expected = Some(1)
+result = Some(1)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 2
+Test Case #63
+Hybrid Linear-Adaptive Binary Search:
+value = 2
+expected = Some(1)
+result = Some(1)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 44 bytes
+WINNER: Linear Fit Search
+Difficult distribution (logarithmic growth)
+Linear Fit Search iterations: 0
+Test Case #64
+Linear Fit Search:
+value = 0
+expected = Some(1)
+result = (true, 0, 0)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 3
+Test Case #64
+Binary Search:
+value = 0
+expected = Some(1)
+result = Some(1)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #64
+Interpolated Binary Search:
+value = 0
+expected = Some(1)
+result = Some(0)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 3
+Test Case #64
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 0
+expected = Some(1)
+result = Some(1)
+duration = 5.6µs
+normalized duration per element = 280.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #64
+Hybrid Linear-Interpolated Binary Search:
+value = 0
+expected = Some(1)
+result = Some(0)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #64
+Hybrid Linear-Adaptive Binary Search:
+value = 0
+expected = Some(1)
+result = Some(0)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 44 bytes
+WINNER: Interpolated Binary Search
+Difficult distribution (logarithmic growth)
+Linear Fit Search iterations: 0
+Test Case #65
+Linear Fit Search:
+value = 2
+expected = Some(10)
+result = (true, 19, 0)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 1
+Test Case #65
+Binary Search:
+value = 2
+expected = Some(10)
+result = Some(9)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #65
+Interpolated Binary Search:
+value = 2
+expected = Some(10)
+result = Some(19)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 1
+Test Case #65
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 2
+expected = Some(10)
+result = Some(9)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #65
+Hybrid Linear-Interpolated Binary Search:
+value = 2
+expected = Some(10)
+result = Some(19)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #65
+Hybrid Linear-Adaptive Binary Search:
+value = 2
+expected = Some(10)
+result = Some(9)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+WINNER: Linear Fit Search
+Difficult distribution (logarithmic growth)
+Linear Fit Search iterations: 0
+Test Case #66
+Linear Fit Search:
+value = 2
+expected = Some(10)
+result = (true, 19, 0)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 1
+Test Case #66
+Binary Search:
+value = 2
+expected = Some(10)
+result = Some(9)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #66
+Interpolated Binary Search:
+value = 2
+expected = Some(10)
+result = Some(19)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 1
+Test Case #66
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 2
+expected = Some(10)
+result = Some(9)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #66
+Hybrid Linear-Interpolated Binary Search:
+value = 2
+expected = Some(10)
+result = Some(19)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #66
+Hybrid Linear-Adaptive Binary Search:
+value = 2
+expected = Some(10)
+result = Some(9)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+WINNER: Linear Fit Search
+Difficult distribution (alternating high-low values)
+Linear Fit Search iterations: 0
+Test Case #67
+Linear Fit Search:
+value = 540
+expected = None
+result = (false, 99, 0)
+duration = 2.9µs
+normalized duration per element = 29.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 6
+Test Case #67
+Binary Search:
+value = 540
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 0
+Test Case #67
+Interpolated Binary Search:
+value = 540
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Test Case #67
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 540
+expected = None
+result = None
+duration = 400ns
+normalized duration per element = 4.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #67
+Hybrid Linear-Interpolated Binary Search:
+value = 540
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #67
+Hybrid Linear-Adaptive Binary Search:
+value = 540
+expected = None
+result = None
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (alternating high-low values)
+Linear Fit Search iterations: 0
+Test Case #68
+Linear Fit Search:
+value = 200
+expected = None
+result = (false, 99, 0)
+duration = 2.9µs
+normalized duration per element = 29.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 6
+Test Case #68
+Binary Search:
+value = 200
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 0
+Test Case #68
+Interpolated Binary Search:
+value = 200
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Test Case #68
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 200
+expected = None
+result = None
+duration = 300ns
+normalized duration per element = 3.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #68
+Hybrid Linear-Interpolated Binary Search:
+value = 200
+expected = None
+result = None
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #68
+Hybrid Linear-Adaptive Binary Search:
+value = 200
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (alternating high-low values)
+Linear Fit Search iterations: 2
+Test Case #69
+Linear Fit Search:
+value = 60
+expected = None
+result = (true, 6, 2)
+duration = 3.2µs
+normalized duration per element = 32.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 6
+Test Case #69
+Binary Search:
+value = 60
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #69
+Interpolated Binary Search:
+value = 60
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Test Case #69
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 60
+expected = None
+result = None
+duration = 400ns
+normalized duration per element = 4.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 2
+Test Case #69
+Hybrid Linear-Interpolated Binary Search:
+value = 60
+expected = None
+result = None
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 2
+Test Case #69
+Hybrid Linear-Adaptive Binary Search:
+value = 60
+expected = None
+result = None
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (repeated blocks)
+Linear Fit Search iterations: 1
+Test Case #70
+Linear Fit Search:
+value = 6
+expected = Some(63)
+result = (true, 66, 1)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 3
+Test Case #70
+Binary Search:
+value = 6
+expected = Some(63)
+result = Some(61)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #70
+Interpolated Binary Search:
+value = 6
+expected = Some(63)
+result = Some(66)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 3
+Test Case #70
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 6
+expected = Some(63)
+result = Some(61)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #70
+Hybrid Linear-Interpolated Binary Search:
+value = 6
+expected = Some(63)
+result = Some(66)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 2
+Test Case #70
+Hybrid Linear-Adaptive Binary Search:
+value = 6
+expected = Some(63)
+result = Some(62)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+WINNER: Linear Fit Search
+Difficult distribution (repeated blocks)
+Linear Fit Search iterations: 1
+Test Case #71
+Linear Fit Search:
+value = 7
+expected = Some(75)
+result = (true, 77, 1)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 2
+Test Case #71
+Binary Search:
+value = 7
+expected = Some(75)
+result = Some(74)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #71
+Interpolated Binary Search:
+value = 7
+expected = Some(75)
+result = Some(77)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 2
+Test Case #71
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 7
+expected = Some(75)
+result = Some(74)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #71
+Hybrid Linear-Interpolated Binary Search:
+value = 7
+expected = Some(75)
+result = Some(77)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 2
+Test Case #71
+Hybrid Linear-Adaptive Binary Search:
+value = 7
+expected = Some(75)
+result = Some(74)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+WINNER: Linear Fit Search
+Difficult distribution (repeated blocks)
+Linear Fit Search iterations: 1
+Test Case #72
+Linear Fit Search:
+value = 7
+expected = Some(75)
+result = (true, 77, 1)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 2
+Test Case #72
+Binary Search:
+value = 7
+expected = Some(75)
+result = Some(74)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #72
+Interpolated Binary Search:
+value = 7
+expected = Some(75)
+result = Some(77)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 2
+Test Case #72
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 7
+expected = Some(75)
+result = Some(74)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #72
+Hybrid Linear-Interpolated Binary Search:
+value = 7
+expected = Some(75)
+result = Some(77)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 2
+Test Case #72
+Hybrid Linear-Adaptive Binary Search:
+value = 7
+expected = Some(75)
+result = Some(74)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+WINNER: Binary Search
+Difficult distribution (sparse values)
+Linear Fit Search iterations: 1
+Test Case #73
+Linear Fit Search:
+value = 9000
+expected = Some(9)
+result = (true, 9, 1)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 1
+Test Case #73
+Binary Search:
+value = 9000
+expected = Some(9)
+result = Some(9)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #73
+Interpolated Binary Search:
+value = 9000
+expected = Some(9)
+result = Some(9)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 1
+Test Case #73
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 9000
+expected = Some(9)
+result = Some(9)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #73
+Hybrid Linear-Interpolated Binary Search:
+value = 9000
+expected = Some(9)
+result = Some(9)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #73
+Hybrid Linear-Adaptive Binary Search:
+value = 9000
+expected = Some(9)
+result = Some(9)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+WINNER: Binary Search
+Difficult distribution (sparse values)
+Linear Fit Search iterations: 1
+Test Case #74
+Linear Fit Search:
+value = 8000
+expected = Some(8)
+result = (true, 8, 1)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #74
+Binary Search:
+value = 8000
+expected = Some(8)
+result = Some(8)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #74
+Interpolated Binary Search:
+value = 8000
+expected = Some(8)
+result = Some(8)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Test Case #74
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 8000
+expected = Some(8)
+result = Some(8)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #74
+Hybrid Linear-Interpolated Binary Search:
+value = 8000
+expected = Some(8)
+result = Some(8)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Test Case #74
+Hybrid Linear-Adaptive Binary Search:
+value = 8000
+expected = Some(8)
+result = Some(8)
+duration = 400ns
+normalized duration per element = 20.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (sparse values)
+Linear Fit Search iterations: 1
+Test Case #75
+Linear Fit Search:
+value = 5000
+expected = Some(5)
+result = (true, 5, 1)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #75
+Binary Search:
+value = 5000
+expected = Some(5)
+result = Some(5)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #75
+Interpolated Binary Search:
+value = 5000
+expected = Some(5)
+result = Some(5)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Test Case #75
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 5000
+expected = Some(5)
+result = Some(5)
+duration = 200ns
+normalized duration per element = 10.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #75
+Hybrid Linear-Interpolated Binary Search:
+value = 5000
+expected = Some(5)
+result = Some(5)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Test Case #75
+Hybrid Linear-Adaptive Binary Search:
+value = 5000
+expected = Some(5)
+result = Some(5)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (negative and positive values)
+Linear Fit Search iterations: 1
+Test Case #76
+Linear Fit Search:
+value = -11
+expected = Some(39)
+result = (true, 39, 1)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #76
+Binary Search:
+value = -11
+expected = Some(39)
+result = Some(39)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #76
+Interpolated Binary Search:
+value = -11
+expected = Some(39)
+result = Some(39)
+duration = 2.9µs
+normalized duration per element = 29.00 ns
+memory usage = 44 bytes
+Test Case #76
+Hybrid Linear-Binary Optimized Threshold Search:
+value = -11
+expected = Some(39)
+result = Some(39)
+duration = 300ns
+normalized duration per element = 3.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #76
+Hybrid Linear-Interpolated Binary Search:
+value = -11
+expected = Some(39)
+result = Some(39)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #76
+Hybrid Linear-Adaptive Binary Search:
+value = -11
+expected = Some(39)
+result = Some(39)
+duration = 3.2µs
+normalized duration per element = 32.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (negative and positive values)
+Linear Fit Search iterations: 1
+Test Case #77
+Linear Fit Search:
+value = -16
+expected = Some(34)
+result = (true, 34, 1)
+duration = 3.2µs
+normalized duration per element = 32.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 6
+Test Case #77
+Binary Search:
+value = -16
+expected = Some(34)
+result = Some(34)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #77
+Interpolated Binary Search:
+value = -16
+expected = Some(34)
+result = Some(34)
+duration = 2.9µs
+normalized duration per element = 29.00 ns
+memory usage = 44 bytes
+Test Case #77
+Hybrid Linear-Binary Optimized Threshold Search:
+value = -16
+expected = Some(34)
+result = Some(34)
+duration = 300ns
+normalized duration per element = 3.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #77
+Hybrid Linear-Interpolated Binary Search:
+value = -16
+expected = Some(34)
+result = Some(34)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #77
+Hybrid Linear-Adaptive Binary Search:
+value = -16
+expected = Some(34)
+result = Some(34)
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (negative and positive values)
+Linear Fit Search iterations: 1
+Test Case #78
+Linear Fit Search:
+value = -4
+expected = Some(46)
+result = (true, 46, 1)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 7
+Test Case #78
+Binary Search:
+value = -4
+expected = Some(46)
+result = Some(46)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 1
+Test Case #78
+Interpolated Binary Search:
+value = -4
+expected = Some(46)
+result = Some(46)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Test Case #78
+Hybrid Linear-Binary Optimized Threshold Search:
+value = -4
+expected = Some(46)
+result = Some(46)
+duration = 300ns
+normalized duration per element = 3.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #78
+Hybrid Linear-Interpolated Binary Search:
+value = -4
+expected = Some(46)
+result = Some(46)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #78
+Hybrid Linear-Adaptive Binary Search:
+value = -4
+expected = Some(46)
+result = Some(46)
+duration = 3.8µs
+normalized duration per element = 38.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (random large values)
+Linear Fit Search iterations: 0
+Test Case #79
+Linear Fit Search:
+value = 82870
+expected = Some(94)
+result = (false, 0, 0)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 7
+Test Case #79
+Binary Search:
+value = 82870
+expected = Some(94)
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 0
+Test Case #79
+Interpolated Binary Search:
+value = 82870
+expected = Some(94)
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Test Case #79
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 82870
+expected = Some(94)
+result = None
+duration = 400ns
+normalized duration per element = 4.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 1
+Test Case #79
+Hybrid Linear-Interpolated Binary Search:
+value = 82870
+expected = Some(94)
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 3
+Test Case #79
+Hybrid Linear-Adaptive Binary Search:
+value = 82870
+expected = Some(94)
+result = None
+duration = 3.2µs
+normalized duration per element = 32.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (random large values)
+Linear Fit Search iterations: 0
+Test Case #80
+Linear Fit Search:
+value = 32980
+expected = None
+result = (false, 0, 0)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 6
+Test Case #80
+Binary Search:
+value = 32980
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 0
+Test Case #80
+Interpolated Binary Search:
+value = 32980
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Test Case #80
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 32980
+expected = None
+result = None
+duration = 300ns
+normalized duration per element = 3.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 4
+Test Case #80
+Hybrid Linear-Interpolated Binary Search:
+value = 32980
+expected = None
+result = None
+duration = 3.3µs
+normalized duration per element = 33.00 ns
+memory usage = 44 bytes
+Test Case #80
+Hybrid Linear-Adaptive Binary Search:
+value = 32980
+expected = None
+result = None
+duration = 700ns
+normalized duration per element = 7.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (random large values)
+Linear Fit Search iterations: 0
+Test Case #81
+Linear Fit Search:
+value = 16139
+expected = None
+result = (false, 0, 0)
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 6
+Test Case #81
+Binary Search:
+value = 16139
+expected = None
+result = None
+duration = 3µs
+normalized duration per element = 30.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 0
+Test Case #81
+Interpolated Binary Search:
+value = 16139
+expected = None
+result = None
+duration = 2.9µs
+normalized duration per element = 29.00 ns
+memory usage = 44 bytes
+Test Case #81
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 16139
+expected = None
+result = None
+duration = 200ns
+normalized duration per element = 2.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 4
+Test Case #81
+Hybrid Linear-Interpolated Binary Search:
+value = 16139
+expected = None
+result = None
+duration = 3.1µs
+normalized duration per element = 31.00 ns
+memory usage = 44 bytes
+Test Case #81
+Hybrid Linear-Adaptive Binary Search:
+value = 16139
+expected = None
+result = None
+duration = 2.4µs
+normalized duration per element = 24.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (prime numbers)
+Linear Fit Search iterations: 2
+Test Case #82
+Linear Fit Search:
+value = 29
+expected = Some(9)
+result = (true, 9, 2)
+duration = 3.2µs
+normalized duration per element = 128.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #82
+Binary Search:
+value = 29
+expected = Some(9)
+result = Some(9)
+duration = 2.8µs
+normalized duration per element = 112.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 2
+Test Case #82
+Interpolated Binary Search:
+value = 29
+expected = Some(9)
+result = Some(9)
+duration = 3.1µs
+normalized duration per element = 124.00 ns
+memory usage = 44 bytes
+Test Case #82
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 29
+expected = Some(9)
+result = Some(9)
+duration = 300ns
+normalized duration per element = 12.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 2
+Test Case #82
+Hybrid Linear-Interpolated Binary Search:
+value = 29
+expected = Some(9)
+result = Some(9)
+duration = 3.1µs
+normalized duration per element = 124.00 ns
+memory usage = 44 bytes
+Test Case #82
+Hybrid Linear-Adaptive Binary Search:
+value = 29
+expected = Some(9)
+result = Some(9)
+duration = 300ns
+normalized duration per element = 12.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (prime numbers)
+Linear Fit Search iterations: 2
+Test Case #83
+Linear Fit Search:
+value = 53
+expected = Some(15)
+result = (true, 15, 2)
+duration = 4.5µs
+normalized duration per element = 180.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 3
+Test Case #83
+Binary Search:
+value = 53
+expected = Some(15)
+result = Some(15)
+duration = 2.9µs
+normalized duration per element = 116.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 2
+Test Case #83
+Interpolated Binary Search:
+value = 53
+expected = Some(15)
+result = Some(15)
+duration = 3.1µs
+normalized duration per element = 124.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 3
+Test Case #83
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 53
+expected = Some(15)
+result = Some(15)
+duration = 3µs
+normalized duration per element = 120.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 2
+Test Case #83
+Hybrid Linear-Interpolated Binary Search:
+value = 53
+expected = Some(15)
+result = Some(15)
+duration = 3.1µs
+normalized duration per element = 124.00 ns
+memory usage = 44 bytes
+Test Case #83
+Hybrid Linear-Adaptive Binary Search:
+value = 53
+expected = Some(15)
+result = Some(15)
+duration = 400ns
+normalized duration per element = 16.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Adaptive Binary Search
+Difficult distribution (prime numbers)
+Linear Fit Search iterations: 2
+Test Case #84
+Linear Fit Search:
+value = 43
+expected = Some(13)
+result = (true, 13, 2)
+duration = 3.1µs
+normalized duration per element = 124.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #84
+Binary Search:
+value = 43
+expected = Some(13)
+result = Some(13)
+duration = 3µs
+normalized duration per element = 120.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 3
+Test Case #84
+Interpolated Binary Search:
+value = 43
+expected = Some(13)
+result = Some(13)
+duration = 3µs
+normalized duration per element = 120.00 ns
+memory usage = 44 bytes
+Test Case #84
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 43
+expected = Some(13)
+result = Some(13)
+duration = 200ns
+normalized duration per element = 8.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 3
+Test Case #84
+Hybrid Linear-Interpolated Binary Search:
+value = 43
+expected = Some(13)
+result = Some(13)
+duration = 3.1µs
+normalized duration per element = 124.00 ns
+memory usage = 44 bytes
+Test Case #84
+Hybrid Linear-Adaptive Binary Search:
+value = 43
+expected = Some(13)
+result = Some(13)
+duration = 300ns
+normalized duration per element = 12.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (fibonacci sequence)
+Linear Fit Search iterations: 6
+Test Case #85
+Linear Fit Search:
+value = 13
+expected = Some(6)
+result = (true, 6, 6)
+duration = 3.3µs
+normalized duration per element = 165.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 3
+Test Case #85
+Binary Search:
+value = 13
+expected = Some(6)
+result = Some(6)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 7
+Test Case #85
+Interpolated Binary Search:
+value = 13
+expected = Some(6)
+result = Some(6)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 3
+Test Case #85
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 13
+expected = Some(6)
+result = Some(6)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 7
+Test Case #85
+Hybrid Linear-Interpolated Binary Search:
+value = 13
+expected = Some(6)
+result = Some(6)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 44 bytes
+Test Case #85
+Hybrid Linear-Adaptive Binary Search:
+value = 13
+expected = Some(6)
+result = Some(6)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Adaptive Binary Search
+Difficult distribution (fibonacci sequence)
+Linear Fit Search iterations: 9
+Test Case #86
+Linear Fit Search:
+value = 55
+expected = Some(9)
+result = (true, 9, 9)
+duration = 4.9µs
+normalized duration per element = 245.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 1
+Test Case #86
+Binary Search:
+value = 55
+expected = Some(9)
+result = Some(9)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 10
+Test Case #86
+Interpolated Binary Search:
+value = 55
+expected = Some(9)
+result = Some(9)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 1
+Test Case #86
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 55
+expected = Some(9)
+result = Some(9)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Test Case #86
+Hybrid Linear-Interpolated Binary Search:
+value = 55
+expected = Some(9)
+result = Some(9)
+duration = 1µs
+normalized duration per element = 50.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 1
+Test Case #86
+Hybrid Linear-Adaptive Binary Search:
+value = 55
+expected = Some(9)
+result = Some(9)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Interpolated Binary Search
+Difficult distribution (fibonacci sequence)
+Linear Fit Search iterations: 10
+Test Case #87
+Linear Fit Search:
+value = 89
+expected = Some(10)
+result = (true, 10, 10)
+duration = 3.4µs
+normalized duration per element = 170.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #87
+Binary Search:
+value = 89
+expected = Some(10)
+result = Some(10)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 11
+Test Case #87
+Interpolated Binary Search:
+value = 89
+expected = Some(10)
+result = Some(10)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Test Case #87
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 89
+expected = Some(10)
+result = Some(10)
+duration = 200ns
+normalized duration per element = 10.00 ns
+memory usage = 44 bytes
+Test Case #87
+Hybrid Linear-Interpolated Binary Search:
+value = 89
+expected = Some(10)
+result = Some(10)
+duration = 900ns
+normalized duration per element = 45.00 ns
+memory usage = 44 bytes
+Test Case #87
+Hybrid Linear-Adaptive Binary Search:
+value = 89
+expected = Some(10)
+result = Some(10)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (geometric progression)
+Linear Fit Search iterations: 7
+Test Case #88
+Linear Fit Search:
+value = 128
+expected = Some(7)
+result = (true, 7, 7)
+duration = 3.5µs
+normalized duration per element = 175.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #88
+Binary Search:
+value = 128
+expected = Some(7)
+result = Some(7)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 8
+Test Case #88
+Interpolated Binary Search:
+value = 128
+expected = Some(7)
+result = Some(7)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Test Case #88
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 128
+expected = Some(7)
+result = Some(7)
+duration = 200ns
+normalized duration per element = 10.00 ns
+memory usage = 44 bytes
+Test Case #88
+Hybrid Linear-Interpolated Binary Search:
+value = 128
+expected = Some(7)
+result = Some(7)
+duration = 800ns
+normalized duration per element = 40.00 ns
+memory usage = 44 bytes
+Test Case #88
+Hybrid Linear-Adaptive Binary Search:
+value = 128
+expected = Some(7)
+result = Some(7)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (geometric progression)
+Linear Fit Search iterations: 13
+Test Case #89
+Linear Fit Search:
+value = 8192
+expected = Some(13)
+result = (true, 13, 13)
+duration = 3.5µs
+normalized duration per element = 175.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #89
+Binary Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 14
+Test Case #89
+Interpolated Binary Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 44 bytes
+Test Case #89
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Test Case #89
+Hybrid Linear-Interpolated Binary Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 1µs
+normalized duration per element = 50.00 ns
+memory usage = 44 bytes
+Test Case #89
+Hybrid Linear-Adaptive Binary Search:
+value = 8192
+expected = Some(13)
+result = Some(13)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (geometric progression)
+Linear Fit Search iterations: 12
+Test Case #90
+Linear Fit Search:
+value = 65536
+expected = Some(16)
+result = (true, 16, 12)
+duration = 3.8µs
+normalized duration per element = 190.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #90
+Binary Search:
+value = 65536
+expected = Some(16)
+result = Some(16)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 11
+Test Case #90
+Interpolated Binary Search:
+value = 65536
+expected = Some(16)
+result = Some(16)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 44 bytes
+Test Case #90
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 65536
+expected = Some(16)
+result = Some(16)
+duration = 200ns
+normalized duration per element = 10.00 ns
+memory usage = 44 bytes
+Test Case #90
+Hybrid Linear-Interpolated Binary Search:
+value = 65536
+expected = Some(16)
+result = Some(16)
+duration = 400ns
+normalized duration per element = 20.00 ns
+memory usage = 44 bytes
+Test Case #90
+Hybrid Linear-Adaptive Binary Search:
+value = 65536
+expected = Some(16)
+result = Some(16)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (random gaps)
+Linear Fit Search iterations: 2
+Test Case #91
+Linear Fit Search:
+value = 631
+expected = Some(10)
+result = (true, 10, 2)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #91
+Binary Search:
+value = 631
+expected = Some(10)
+result = Some(10)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 2
+Test Case #91
+Interpolated Binary Search:
+value = 631
+expected = Some(10)
+result = Some(10)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Test Case #91
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 631
+expected = Some(10)
+result = Some(10)
+duration = 200ns
+normalized duration per element = 10.00 ns
+memory usage = 44 bytes
+Test Case #91
+Hybrid Linear-Interpolated Binary Search:
+value = 631
+expected = Some(10)
+result = Some(10)
+duration = 400ns
+normalized duration per element = 20.00 ns
+memory usage = 44 bytes
+Test Case #91
+Hybrid Linear-Adaptive Binary Search:
+value = 631
+expected = Some(10)
+result = Some(10)
+duration = 400ns
+normalized duration per element = 20.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (random gaps)
+Linear Fit Search iterations: 2
+Test Case #92
+Linear Fit Search:
+value = 365
+expected = Some(5)
+result = (true, 5, 2)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #92
+Binary Search:
+value = 365
+expected = Some(5)
+result = Some(5)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 2
+Test Case #92
+Interpolated Binary Search:
+value = 365
+expected = Some(5)
+result = Some(5)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Test Case #92
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 365
+expected = Some(5)
+result = Some(5)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Test Case #92
+Hybrid Linear-Interpolated Binary Search:
+value = 365
+expected = Some(5)
+result = Some(5)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Test Case #92
+Hybrid Linear-Adaptive Binary Search:
+value = 365
+expected = Some(5)
+result = Some(5)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (random gaps)
+Linear Fit Search iterations: 3
+Test Case #93
+Linear Fit Search:
+value = 463
+expected = Some(6)
+result = (true, 6, 3)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 3
+Test Case #93
+Binary Search:
+value = 463
+expected = Some(6)
+result = Some(6)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 2
+Test Case #93
+Interpolated Binary Search:
+value = 463
+expected = Some(6)
+result = Some(6)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 3
+Test Case #93
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 463
+expected = Some(6)
+result = Some(6)
+duration = 46.7µs
+normalized duration per element = 2335.00 ns
+memory usage = 44 bytes
+Test Case #93
+Hybrid Linear-Interpolated Binary Search:
+value = 463
+expected = Some(6)
+result = Some(6)
+duration = 400ns
+normalized duration per element = 20.00 ns
+memory usage = 44 bytes
+Test Case #93
+Hybrid Linear-Adaptive Binary Search:
+value = 463
+expected = Some(6)
+result = Some(6)
+duration = 400ns
+normalized duration per element = 20.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Interpolated Binary Search
+Difficult distribution (exponential growth)
+Linear Fit Search iterations: 8
+Test Case #94
+Linear Fit Search:
+value = 256
+expected = Some(8)
+result = (true, 8, 8)
+duration = 3.5µs
+normalized duration per element = 175.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 5
+Test Case #94
+Binary Search:
+value = 256
+expected = Some(8)
+result = Some(8)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 9
+Test Case #94
+Interpolated Binary Search:
+value = 256
+expected = Some(8)
+result = Some(8)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Test Case #94
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 256
+expected = Some(8)
+result = Some(8)
+duration = 200ns
+normalized duration per element = 10.00 ns
+memory usage = 44 bytes
+Test Case #94
+Hybrid Linear-Interpolated Binary Search:
+value = 256
+expected = Some(8)
+result = Some(8)
+duration = 900ns
+normalized duration per element = 45.00 ns
+memory usage = 44 bytes
+Test Case #94
+Hybrid Linear-Adaptive Binary Search:
+value = 256
+expected = Some(8)
+result = Some(8)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (exponential growth)
+Linear Fit Search iterations: 2
+Test Case #95
+Linear Fit Search:
+value = 4
+expected = Some(2)
+result = (true, 2, 2)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 4
+Test Case #95
+Binary Search:
+value = 4
+expected = Some(2)
+result = Some(2)
+duration = 2.9µs
+normalized duration per element = 145.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 3
+Test Case #95
+Interpolated Binary Search:
+value = 4
+expected = Some(2)
+result = Some(2)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Test Case #95
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 4
+expected = Some(2)
+result = Some(2)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Interpolated Binary Search iterations: 3
+Test Case #95
+Hybrid Linear-Interpolated Binary Search:
+value = 4
+expected = Some(2)
+result = Some(2)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Adaptive Binary Search iterations: 3
+Test Case #95
+Hybrid Linear-Adaptive Binary Search:
+value = 4
+expected = Some(2)
+result = Some(2)
+duration = 3.2µs
+normalized duration per element = 160.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Binary Optimized Threshold Search
+Difficult distribution (exponential growth)
+Linear Fit Search iterations: 14
+Test Case #96
+Linear Fit Search:
+value = 16384
+expected = Some(14)
+result = (true, 14, 14)
+duration = 3.8µs
+normalized duration per element = 190.00 ns
+memory usage = 52 bytes
+Binary Search iterations: 2
+Test Case #96
+Binary Search:
+value = 16384
+expected = Some(14)
+result = Some(14)
+duration = 3µs
+normalized duration per element = 150.00 ns
+memory usage = 44 bytes
+Interpolated Binary Search iterations: 15
+Test Case #96
+Interpolated Binary Search:
+value = 16384
+expected = Some(14)
+result = Some(14)
+duration = 3.3µs
+normalized duration per element = 165.00 ns
+memory usage = 44 bytes
+Hybrid Linear-Binary Optimized Threshold Search iterations: 2
+Test Case #96
+Hybrid Linear-Binary Optimized Threshold Search:
+value = 16384
+expected = Some(14)
+result = Some(14)
+duration = 3.1µs
+normalized duration per element = 155.00 ns
+memory usage = 44 bytes
+Test Case #96
+Hybrid Linear-Interpolated Binary Search:
+value = 16384
+expected = Some(14)
+result = Some(14)
+duration = 900ns
+normalized duration per element = 45.00 ns
+memory usage = 44 bytes
+Test Case #96
+Hybrid Linear-Adaptive Binary Search:
+value = 16384
+expected = Some(14)
+result = Some(14)
+duration = 300ns
+normalized duration per element = 15.00 ns
+memory usage = 44 bytes
+WINNER: Hybrid Linear-Adaptive Binary Search
+
+[31mTotal Wins:[0m
+Linear Fit Search: 5
+Binary Search: 7
+Interpolated Binary Search: 5
+Hybrid Linear-Binary Optimized Threshold Search: 62
+Hybrid Linear-Interpolated Binary Search: 8
+Hybrid Linear-Adaptive Binary Search: 9

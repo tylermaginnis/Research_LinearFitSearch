@@ -1,6 +1,6 @@
 # Search Algorithm Performance Comparison
 
-This project aims to compare the performance of three different search algorithms: Linear Fit Search, Binary Search, and Hybrid Search. The comparison is based on various distributions of data, including random values, prime numbers, Fibonacci sequence, geometric progression, random gaps, and exponential growth.
+This project aims to compare the performance of several different search algorithms: Linear Fit Search, Binary Search, Interpolated Binary Search, Hybrid Search, Hybrid Interpolated Search, and Hybrid Adaptive Search. The comparison is based on various distributions of data, including random values, prime numbers, Fibonacci sequence, geometric progression, random gaps, and exponential growth.
 
 ## Credits
 
@@ -12,7 +12,10 @@ This project was inspired by the [Linear Fit Search](https://blog.demofox.org/20
 - [Algorithms](#algorithms)
   - [Linear Fit Search](#linear-fit-search)
   - [Binary Search](#binary-search)
+  - [Interpolated Binary Search](#interpolated-binary-search)
   - [Hybrid Search](#hybrid-search)
+  - [Hybrid Interpolated Search](#hybrid-interpolated-search)
+  - [Hybrid Adaptive Search](#hybrid-adaptive-search)
 - [Test Data](#test-data)
 - [Metrics](#metrics)
 - [Results](#results)
@@ -34,9 +37,23 @@ Linear Fit Search is an algorithm that attempts to find the target value by leve
 
 Binary Search is a more efficient search algorithm that works on sorted lists. It repeatedly divides the search interval in half until the target value is found or the interval is empty. The algorithm starts by comparing the target value to the middle element of the list. If the target value is equal to the middle element, the search is complete. If the target value is less than the middle element, the algorithm continues the search in the lower half of the list. If the target value is greater than the middle element, the algorithm continues the search in the upper half of the list. This process is repeated until the target value is found or the search interval is empty. Binary Search has a logarithmic time complexity of O(log n), making it much faster than Linear Fit Search for larger datasets.
 
+### Interpolated Binary Search
+
+Interpolated Binary Search is an enhancement of Binary Search that works well on uniformly distributed data. Instead of always choosing the middle element, it estimates the position of the target value based on the values at the low and high indices. This can reduce the number of iterations needed to find the target value. The algorithm calculates the estimated position using the formula:
+\[ \text{pos} = \text{low} + \left( \frac{(\text{target} - \text{values}[\text{low}]) \times (\text{high} - \text{low})}{\text{values}[\text{high}] - \text{values}[\text{low}]} \right) \]
+If the estimated position is correct, the search is complete. Otherwise, the algorithm continues the search in the appropriate half of the list. For more details, refer to the implementation in [main.rs](src/main.rs).
+
 ### Hybrid Search
 
 Hybrid Search is a combination of Linear Fit Search and Binary Search. It uses Linear Fit Search for small datasets and switches to Binary Search for larger datasets. The idea is to take advantage of the simplicity of Linear Fit Search for small datasets while leveraging the efficiency of Binary Search for larger datasets. The threshold for switching between the two algorithms can be determined based on the size of the dataset and the specific use case.
+
+### Hybrid Interpolated Search
+
+Hybrid Interpolated Search combines the principles of Interpolated Binary Search and Linear Fit Search. It starts with Linear Fit Search and periodically adjusts the threshold based on the variance of the data. If the variance is low, it uses Interpolated Binary Search to estimate the position of the target value. This approach aims to balance the benefits of both algorithms, providing efficient search performance for a wide range of data distributions. For more details, refer to the implementation in [main.rs](src/main.rs).
+
+### Hybrid Adaptive Search
+
+Hybrid Adaptive Search is an advanced search algorithm that adapts its strategy based on the characteristics of the data. It starts with a combination of Linear Fit Search and Binary Search, similar to Hybrid Search. However, it periodically adjusts the threshold and search strategy based on the variance and distribution of the data. This adaptive approach allows the algorithm to dynamically switch between different search methods, optimizing performance for various data distributions. For more details, refer to the implementation in [main.rs](src/main.rs).
 
 ## Test Data
 
@@ -82,6 +99,40 @@ To run the performance comparison, follow these steps:
    ```
 
 The results will be displayed in the console, showing the performance metrics and the winner for each test case.
+
+
+## Analysis of results.txt
+
+The results from `results.txt` provide a detailed comparison of various search algorithms across different test cases. Each test case evaluates the performance of the algorithms on different data distributions, including random values, prime numbers, Fibonacci sequence, geometric progression, random gaps, and exponential growth.
+
+Key observations from the results:
+
+1. **Hybrid Linear-Binary Optimized Threshold Search**:
+   - Frequently emerges as the winner in many test cases.
+   - Demonstrates superior performance in terms of execution time, especially for non-linear and difficult distributions.
+   - Consistently shows low memory usage across different data distributions.
+
+2. **Hybrid Linear-Adaptive Binary Search**:
+   - Performs well in cases with mixed distributions and non-linear ranges.
+   - Shows competitive execution times and memory usage, often close to the optimized threshold search.
+
+3. **Hybrid Linear-Interpolated Binary Search**:
+   - Exhibits strong performance in test cases with non-linear and mixed distributions.
+   - Execution times are generally competitive, but not as consistently low as the optimized threshold search.
+
+4. **Linear Fit Search**:
+   - Performs well in specific cases, particularly with small ranges and repeated blocks.
+   - Execution times and memory usage are higher compared to hybrid search algorithms in most cases.
+
+5. **Binary Search**:
+   - Shows reliable performance with predictable execution times and memory usage.
+   - Generally outperformed by hybrid search algorithms in terms of execution time.
+
+6. **Interpolated Binary Search**:
+   - Demonstrates good performance in cases with sorted data and specific mathematical properties.
+   - Execution times are competitive, but memory usage is similar to other binary search variants.
+
+Overall, the results highlight the effectiveness of hybrid search algorithms, particularly the Hybrid Linear-Binary Optimized Threshold Search, in handling various data distributions efficiently. The detailed metrics for each test case provide valuable insights into the strengths and weaknesses of each algorithm, guiding the selection of the most suitable search method for different scenarios.
 
 ## Contributing
 

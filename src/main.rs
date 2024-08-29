@@ -111,49 +111,248 @@ fn binary_search(values: &[i32], target: i32) -> Option<usize> {
     None
 }
 
-// Hybrid search combining binary and linear search
-fn hybrid_search(values: &[i32], target: i32) -> Option<usize> {
-    // Initialize the low and high indices for the search range
-    let mut low = 0; // The starting index of the search range
-    let mut high = values.len() as i32 - 1; // The ending index of the search range
-    let mut iterations = 0; // Counter to keep track of the number of iterations
+fn interpolated_binary_search(values: &[i32], target: i32) -> Option<usize> {
+    let mut low = 0;
+    let mut high = values.len() as i32 - 1;
+    let mut iterations = 0;
 
-    // Loop until the search range is exhausted
-    while low <= high {
-        iterations += 1; // Increment the iteration counter
+    while low <= high && target >= values[low as usize] && target <= values[high as usize] {
+        iterations += 1;
 
-        // Dynamically adjust threshold based on the size of the array
-        let threshold = (high - low) / 10; // Calculate the threshold for switching to linear search
-        if high - low <= threshold {
-            // If the search range is small enough, perform linear search in the small segment
-            return values[low as usize..=high as usize] // Slice the array to the current search range
-                .iter() // Create an iterator over the slice
-                .position(|&x| x == target) // Find the position of the target in the slice
-                .map(|pos| pos + low as usize); // Adjust the position to the original array
+        if low == high {
+            if values[low as usize] == target {
+                println!("Interpolated Binary Search iterations: {}", iterations);
+                return Some(low as usize);
+            }
+            break;
         }
 
-        // Calculate the middle index of the current search range
-        let mid = (low + high) / 2; // Calculate the middle index
-        let mid_value = values[mid as usize]; // Get the value at the middle index
+        let pos = low + (((high - low) as f32 / (values[high as usize] - values[low as usize]) as f32) * (target - values[low as usize]) as f32) as i32;
 
-        // Check if the middle value is the target
-        if mid_value == target {
-            // If the middle value is the target, return its index
-            println!("Hybrid Search iterations: {}", iterations); // Print the number of iterations
-            return Some(mid as usize); // Return the index of the target
-        } else if mid_value < target {
-            // If the middle value is less than the target, search the right half
-            low = mid + 1; // Update the low index to the right half
+        if values[pos as usize] == target {
+            println!("Interpolated Binary Search iterations: {}", iterations);
+            return Some(pos as usize);
+        }
+
+        if values[pos as usize] < target {
+            low = pos + 1;
         } else {
-            // If the middle value is greater than the target, search the left half
-            high = mid - 1; // Update the high index to the left half
+            high = pos - 1;
         }
     }
 
-    // If the target is not found, return None
-    println!("Hybrid Search iterations: {}", iterations); // Print the number of iterations
-    None // Return None to indicate the target was not found
+    println!("Interpolated Binary Search iterations: {}", iterations);
+    None
 }
+
+
+// Hybrid linear+binary search with adaptive heuristics
+fn hybrid_search(values: &[i32], target: i32) -> Option<usize> {
+    let mut low = 0;
+    let mut high = values.len() as i32 - 1;
+    let mut iterations = 0;
+
+    // Initial threshold calculation
+    let mut threshold = (high - low) / 10;
+
+    while low <= high {
+        iterations += 1;
+
+        // Adjust threshold periodically
+        if iterations % 8 == 0 {
+            let range = &values[low as usize..=high as usize];
+            let (sum, sum_of_squares, early_exit) = range.iter().try_fold((0i64, 0i64, false), |(sum, sq_sum, _), &x| {
+                let x_i64 = x as i64;
+                let new_sum = sum + x_i64;
+                let new_sq_sum = sq_sum + x_i64 * x_i64;
+                let mean = new_sum as f64 / range.len() as f64;
+                let variance = (new_sq_sum as f64 / range.len() as f64) - (mean * mean);
+                if variance < 1.0 {
+                    Err((new_sum, new_sq_sum, true))
+                } else {
+                    Ok((new_sum, new_sq_sum, false))
+                }
+            }).unwrap_or_else(|res| res);
+            if !early_exit {
+                let mean = sum as f64 / range.len() as f64;
+                let variance = (sum_of_squares as f64 / range.len() as f64) - (mean * mean);
+                threshold = (variance.sqrt() as i32).max(1);
+            }
+        }
+
+        // If within threshold, use linear search
+        if high - low <= threshold {
+            return values[low as usize..=high as usize]
+                .iter()
+                .position(|&x| x == target)
+                .map(|pos| pos + low as usize);
+        }
+
+        let mid = (low + high) / 2;
+        let mid_value = unsafe { *values.get_unchecked(mid as usize) };
+
+        if mid_value == target {
+            println!("Hybrid Linear-Binary Optimized Threshold Search iterations: {}", iterations);
+            return Some(mid as usize);
+        } else if mid_value < target {
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+    }
+
+    println!("Hybrid Linear-Binary Optimized Threshold Search iterations: {}", iterations);
+    None
+}
+
+fn hybrid_interpolated_search(values: &[i32], target: i32) -> Option<usize> {
+    let mut low = 0i64;
+    let mut high = (values.len() - 1) as i64;
+    let mut iterations = 0;
+    let mut threshold = 10;
+
+    while low <= high {
+        iterations += 1;
+
+        // Adjust threshold periodically
+        if iterations % 8 == 0 {
+            let range = &values[low as usize..=high as usize];
+            let (sum, sum_of_squares, early_exit) = range.iter().try_fold((0i64, 0i64, false), |(sum, sq_sum, _), &x| {
+                let x_i64 = x as i64;
+                let new_sum = sum + x_i64;
+                let new_sq_sum = sq_sum + x_i64 * x_i64;
+                let mean = new_sum as f64 / range.len() as f64;
+                let variance = (new_sq_sum as f64 / range.len() as f64) - (mean * mean);
+                if variance < 1.0 {
+                    Err((new_sum, new_sq_sum, true))
+                } else {
+                    Ok((new_sum, new_sq_sum, false))
+                }
+            }).unwrap_or_else(|res| res);
+            if !early_exit {
+                let mean = sum as f64 / range.len() as f64;
+                let variance = (sum_of_squares as f64 / range.len() as f64) - (mean * mean);
+                threshold = (variance.sqrt() as i32).max(1);
+            }
+        }
+
+        // If within threshold, use linear search
+        if high - low <= threshold as i64 {
+            return values[low as usize..=high as usize]
+                .iter()
+                .position(|&x| x == target)
+                .map(|pos| pos + low as usize);
+        }
+
+        // Interpolated Binary Search
+        let mid = if values[low as usize] != values[high as usize] {
+            low + ((target as i64 - values[low as usize] as i64) * (high - low)
+                / (values[high as usize] as i64 - values[low as usize] as i64))
+        } else {
+            (low + high) / 2
+        };
+
+        // Clamp mid to valid index range
+        let mid = mid.clamp(low, high);
+        
+        let mid_value = unsafe { *values.get_unchecked(mid as usize) };
+
+        if mid_value == target {
+            println!("Hybrid Linear-Interpolated Binary Search iterations: {}", iterations);
+            return Some(mid as usize);
+        } else if mid_value < target {
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+    }
+
+    println!("Hybrid Linear-Interpolated Binary Search iterations: {}", iterations);
+    None
+}
+
+fn hybrid_adaptive_search(values: &[i32], target: i32) -> Option<usize> {
+    let mut low = 0i64;
+    let mut high = (values.len() - 1) as i64;
+    let mut iterations = 0;
+    let mut threshold = 10;
+
+    while low <= high {
+        iterations += 1;
+
+        // Adjust threshold periodically
+        if iterations % 8 == 0 {
+            let range = &values[low as usize..=high as usize];
+            let (sum, sum_of_squares, early_exit) = range.iter().try_fold((0i64, 0i64, false), |(sum, sq_sum, _), &x| {
+                let x_i64 = x as i64;
+                let new_sum = sum + x_i64;
+                let new_sq_sum = sq_sum + x_i64 * x_i64;
+                let mean = new_sum as f64 / range.len() as f64;
+                let variance = (new_sq_sum as f64 / range.len() as f64) - (mean * mean);
+                if variance < 1.0 {
+                    Err((new_sum, new_sq_sum, true))
+                } else {
+                    Ok((new_sum, new_sq_sum, false))
+                }
+            }).unwrap_or_else(|res| res);
+            if !early_exit {
+                let mean = sum as f64 / range.len() as f64;
+                let variance = (sum_of_squares as f64 / range.len() as f64) - (mean * mean);
+                threshold = (variance.sqrt() as i32).max(1);
+            }
+        }
+
+        // If within threshold, use linear search
+        if high - low <= threshold as i64 {
+            return values[low as usize..=high as usize]
+                .iter()
+                .position(|&x| x == target)
+                .map(|pos| pos + low as usize);
+        }
+
+        // Determine if interpolated search should be used
+        let use_interpolation = if values[low as usize] != values[high as usize] {
+            let predicted_mid = low + ((target as i64 - values[low as usize] as i64) * (high - low)
+                / (values[high as usize] as i64 - values[low as usize] as i64));
+            // Use interpolation if predicted mid is closer to target than binary mid
+            let binary_mid = (low + high) / 2;
+            (predicted_mid - target as i64).abs() < (binary_mid - target as i64).abs()
+        } else {
+            false
+        };
+
+        let mid = if use_interpolation {
+            // Interpolated Binary Search
+            low + ((target as i64 - values[low as usize] as i64) * (high - low)
+                / (values[high as usize] as i64 - values[low as usize] as i64))
+        } else {
+            // Traditional Binary Search
+            (low + high) / 2
+        };
+
+        // Clamp mid to valid index range
+        let mid = mid.clamp(low, high);
+        
+        let mid_value = unsafe { *values.get_unchecked(mid as usize) };
+
+        if mid_value == target {
+            println!("Hybrid Linear-Adaptive Binary Search iterations: {}", iterations);
+            return Some(mid as usize);
+        } else if mid_value < target {
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+    }
+
+    println!("Hybrid Linear-Adaptive Binary Search iterations: {}", iterations);
+    None
+}
+
+
+
+
+
 
 
 
@@ -441,6 +640,7 @@ fn generate_test_data() -> Vec<(Vec<i32>, i32, Option<usize>, String)> {
 
     test_data
 }
+
 fn main() {
     let test_data = generate_test_data();
     let mut iteration = 0;
@@ -448,7 +648,10 @@ fn main() {
     // Initialize win counters
     let mut linear_fit_wins = 0;
     let mut binary_search_wins = 0;
+    let mut interpolated_binary_search_wins = 0;
     let mut hybrid_search_wins = 0;
+    let mut hybrid_interpolated_search_wins = 0;
+    let mut hybrid_adaptive_search_wins = 0;
 
     for (values, search_value, expected, comment) in test_data {
         println!("{}", comment.bold().blue());
@@ -493,6 +696,25 @@ fn main() {
             search_value, expected, result, duration, normalized_binary_duration, memory_usage
         );
 
+        // Interpolated Binary Search
+        let start = Instant::now();
+        let result = interpolated_binary_search(&values, search_value);
+        let duration = start.elapsed();
+        let memory_usage = std::mem::size_of_val(&values) + std::mem::size_of_val(&search_value) + std::mem::size_of_val(&result);
+        {
+            let mut cpu_metrics = CPU_METRICS.lock().unwrap();
+            cpu_metrics.entry("interpolated_binary_search").or_default().push(duration.as_nanos());
+            let mut memory_metrics = MEMORY_METRICS.lock().unwrap();
+            memory_metrics.entry("interpolated_binary_search").or_default().push(memory_usage);
+        }
+        let normalized_interpolated_duration = duration.as_nanos() as f64 / num_elements as f64;
+        println!(
+            "{}\n{}:\nvalue = {}\nexpected = {:?}\nresult = {:?}\nduration = {:?}\nnormalized duration per element = {:.2} ns\nmemory usage = {} bytes",
+            format!("Test Case #{}", iteration).bold().yellow(),
+            "Interpolated Binary Search".bold().green(),
+            search_value, expected, result, duration, normalized_interpolated_duration, memory_usage
+        );
+
         // Hybrid Search
         let start = Instant::now();
         let result = hybrid_search(&values, search_value);
@@ -508,46 +730,84 @@ fn main() {
         println!(
             "{}\n{}:\nvalue = {}\nexpected = {:?}\nresult = {:?}\nduration = {:?}\nnormalized duration per element = {:.2} ns\nmemory usage = {} bytes",
             format!("Test Case #{}", iteration).bold().yellow(),
-            "Hybrid Search".bold().green(),
+            "Hybrid Linear-Binary Optimized Threshold Search".bold().green(),
             search_value, expected, result, duration, normalized_hybrid_duration, memory_usage
         );
 
-        // Additional Hybrid Search
+        // Hybrid Interpolated Search
         let start = Instant::now();
-        let result = hybrid_search(&values, search_value);
+        let result = hybrid_interpolated_search(&values, search_value);
         let duration = start.elapsed();
         let memory_usage = std::mem::size_of_val(&values) + std::mem::size_of_val(&search_value) + std::mem::size_of_val(&result);
         {
             let mut cpu_metrics = CPU_METRICS.lock().unwrap();
-            cpu_metrics.entry("additional_hybrid_search").or_default().push(duration.as_nanos());
+            cpu_metrics.entry("hybrid_interpolated_search").or_default().push(duration.as_nanos());
             let mut memory_metrics = MEMORY_METRICS.lock().unwrap();
-            memory_metrics.entry("additional_hybrid_search").or_default().push(memory_usage);
+            memory_metrics.entry("hybrid_interpolated_search").or_default().push(memory_usage);
         }
-        let normalized_additional_hybrid_duration = duration.as_nanos() as f64 / num_elements as f64;
+        let normalized_hybrid_interpolated_duration = duration.as_nanos() as f64 / num_elements as f64;
         println!(
             "{}\n{}:\nvalue = {}\nexpected = {:?}\nresult = {:?}\nduration = {:?}\nnormalized duration per element = {:.2} ns\nmemory usage = {} bytes",
             format!("Test Case #{}", iteration).bold().yellow(),
-            "Additional Hybrid Search".bold().green(),
-            search_value, expected, result, duration, normalized_additional_hybrid_duration, memory_usage
+            "Hybrid Linear-Interpolated Binary Search".bold().green(),
+            search_value, expected, result, duration, normalized_hybrid_interpolated_duration, memory_usage
         );
 
-        // Determine the winner
-        let winner = if normalized_linear_duration < normalized_binary_duration && normalized_linear_duration < normalized_hybrid_duration {
-            linear_fit_wins += 1;
-            "Linear Fit Search"
-        } else if normalized_binary_duration < normalized_linear_duration && normalized_binary_duration < normalized_hybrid_duration {
-            binary_search_wins += 1;
-            "Binary Search"
-        } else {
-            hybrid_search_wins += 1;
-            "Hybrid Search"
-        };
-        println!("{}", format!("WINNER: {}", winner).bold().blue());
+        // Hybrid Adaptive Search
+        let start = Instant::now();
+        let result = hybrid_adaptive_search(&values, search_value);
+        let duration = start.elapsed();
+        let memory_usage = std::mem::size_of_val(&values) + std::mem::size_of_val(&search_value) + std::mem::size_of_val(&result);
+        {
+            let mut cpu_metrics = CPU_METRICS.lock().unwrap();
+            cpu_metrics.entry("hybrid_adaptive_search").or_default().push(duration.as_nanos());
+            let mut memory_metrics = MEMORY_METRICS.lock().unwrap();
+            memory_metrics.entry("hybrid_adaptive_search").or_default().push(memory_usage);
+        }
+        let normalized_hybrid_adaptive_duration = duration.as_nanos() as f64 / num_elements as f64;
+        println!(
+            "{}\n{}:\nvalue = {}\nexpected = {:?}\nresult = {:?}\nduration = {:?}\nnormalized duration per element = {:.2} ns\nmemory usage = {} bytes",
+            format!("Test Case #{}", iteration).bold().yellow(),
+            "Hybrid Linear-Adaptive Binary Search".bold().green(),
+            search_value, expected, result, duration, normalized_hybrid_adaptive_duration, memory_usage
+        );
+
+        // Bind the array to a variable to extend its lifetime
+        let search_methods = [
+            ("Linear Fit Search", normalized_linear_duration),
+            ("Binary Search", normalized_binary_duration),
+            ("Interpolated Binary Search", normalized_interpolated_duration),
+            ("Hybrid Linear-Binary Optimized Threshold Search", normalized_hybrid_duration),
+            ("Hybrid Linear-Interpolated Binary Search", normalized_hybrid_interpolated_duration),
+            ("Hybrid Linear-Adaptive Binary Search", normalized_hybrid_adaptive_duration),
+        ];
+
+        // Determine the winner based on the least runtime
+        let (winner, _) = search_methods
+            .iter()
+            .min_by(|a, b| a.1.partial_cmp(&b.1).unwrap())
+            .unwrap();
+
+        let winner_str = winner.to_string();
+        match winner_str.as_str() {
+            "Linear Fit Search" => linear_fit_wins += 1,
+            "Binary Search" => binary_search_wins += 1,
+            "Interpolated Binary Search" => interpolated_binary_search_wins += 1,
+            "Hybrid Linear-Binary Optimized Threshold Search" => hybrid_search_wins += 1,
+            "Hybrid Linear-Interpolated Binary Search" => hybrid_interpolated_search_wins += 1,
+            "Hybrid Linear-Adaptive Binary Search" => hybrid_adaptive_search_wins += 1,
+            _ => (),
+        }
+        println!("{}", format!("WINNER: {}", winner_str).bold().blue());
+
     }
 
     // Print total wins
     println!("\n\x1b[31mTotal Wins:\x1b[0m");
     println!("Linear Fit Search: {}", linear_fit_wins);
     println!("Binary Search: {}", binary_search_wins);
-    println!("Hybrid Search: {}", hybrid_search_wins);
+    println!("Interpolated Binary Search: {}", interpolated_binary_search_wins);
+    println!("Hybrid Linear-Binary Optimized Threshold Search: {}", hybrid_search_wins);
+    println!("Hybrid Linear-Interpolated Binary Search: {}", hybrid_interpolated_search_wins);
+    println!("Hybrid Linear-Adaptive Binary Search: {}", hybrid_adaptive_search_wins);
 }

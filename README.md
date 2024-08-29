@@ -28,7 +28,7 @@ The goal of this project is to evaluate the performance of different search algo
 
 ### Linear Fit Search
 
-Linear Fit Search is a simple search algorithm that iterates through the list of values to find the target value. It starts from the beginning of the list and checks each element one by one until it finds the target value or reaches the end of the list. This algorithm is efficient for small datasets because it has a linear time complexity of O(n), where n is the number of elements in the list. However, it can be slow for larger datasets because it may need to check many elements before finding the target value.
+Linear Fit Search is an algorithm that attempts to find the target value by leveraging a linear fit equation. It starts by calculating the initial slope (m) and intercept (b) based on the minimum and maximum values in the list. The algorithm then iteratively refines the search range by updating the slope and intercept, and calculating a guess index using the linear fit equation. This process continues until the target value is found or the search range is exhausted. Linear Fit Search is efficient for datasets where the values are approximately linear, but its performance may vary for other types of distributions. For more details, refer to the implementation in [main.rs](src/main.rs).
 
 ### Binary Search
 
